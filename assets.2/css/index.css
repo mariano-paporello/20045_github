@@ -114,12 +114,6 @@ nav {
     display: none;
 }
 
-
-.nav {
-    padding: 0 2rem;
-    /*para generar un espacio en los costados cuando  achicamos la pagina*/
-}
-
 li a {
     font-size: 2vh;
     padding: 3vh;
@@ -144,7 +138,7 @@ li a {
 
 .background_index {
     background-image: url(../images/index/backgroud\ image2.jpg);
-    background-size: contain;
+    background-size:cover;
     background-attachment: local;
 }
 
