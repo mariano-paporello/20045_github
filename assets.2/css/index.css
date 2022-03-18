@@ -28,13 +28,14 @@ footer {
 
 .footer_list {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     min-height: 10vh;
+    justify-content: center;
 }
 
 .footer_link {
-    padding: 1.2rem;
+    padding: 1vh;
+    margin-left: 1vw;
 }
 
 /*!  general */
@@ -438,13 +439,21 @@ body main .manga_section{
 /*Main of Contact Us*/
 .contact_background {
     background-color: rgb(34, 8, 8);
+    display: flex;
+    justify-content: center;
 }
 
 .form {
-    color: white;
+    color: whitesmoke;
     text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: black;
+    border-radius: 2vw;
 }
-
+fieldset p{
+    padding: 1vh;
+}
 
 
 
