@@ -14,7 +14,7 @@
 
 body {
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
     display: grid;
     grid-auto-rows: auto 1fr auto;
       
@@ -22,19 +22,20 @@ body {
 
 /* ! footer*/
 footer {
-    background-color: rgb(39, 3, 3);
+    background-color: rgb(55, 6, 23);
     min-height: 10vh;
 }
 
 .footer_list {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     min-height: 10vh;
+    justify-content: center;
 }
 
 .footer_link {
-    padding: 1.2rem;
+    padding: 1vh;
+    margin-left: 1vw;
 }
 
 /*!  general */
@@ -114,12 +115,6 @@ nav {
     display: none;
 }
 
-
-.nav {
-    padding: 0 2rem;
-    /*para generar un espacio en los costados cuando  achicamos la pagina*/
-}
-
 li a {
     font-size: 2vh;
     padding: 3vh;
@@ -144,7 +139,7 @@ li a {
 
 .background_index {
     background-image: url(../images/index/backgroud\ image2.jpg);
-    background-size: contain;
+    background-size:cover;
     background-attachment: local;
 }
 
@@ -179,6 +174,9 @@ li a {
 
 .bestseller_section_title {
     color: rgb(252, 151, 0);
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -444,13 +442,21 @@ body main .manga_section{
 /*Main of Contact Us*/
 .contact_background {
     background-color: rgb(34, 8, 8);
+    display: flex;
+    justify-content: center;
 }
 
 .form {
-    color: white;
+    color: whitesmoke;
     text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: black;
+    border-radius: 2vw;
 }
-
+fieldset p{
+    padding: 1vh;
+}
 
 
 
