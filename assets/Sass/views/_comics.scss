@@ -1,8 +1,10 @@
 /*Main of Comics*/
 
 .comics_background {
+    background-image: url(../images/comics/backgroud_image_comic.jpg);
     background-position: center;
     background-size: contain;
+    
     .section_comics {
         display: flex;
         align-items: center;
