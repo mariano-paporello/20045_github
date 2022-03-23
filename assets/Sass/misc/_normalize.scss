@@ -1,0 +1,31 @@
+/* Normalize*/
+*,
+*::after,
+ *::before {
+    font-family: Quintessential;
+    border-left: 20px;
+    border-right: 20px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    display: grid;
+    grid-auto-rows: auto 1fr auto;
+      
+}
+
+/*!  general */
+
+picture{
+    min-width: 320px;
+    
+}
+li form input{
+    width: 13vw;
+}

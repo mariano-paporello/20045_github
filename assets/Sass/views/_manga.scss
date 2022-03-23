@@ -1,0 +1,134 @@
+/* Main of Manga*/
+
+.background_manga {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    body main .manga_section{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-grow: 1;
+        gap: 15px
+        ;
+        .blue_lock_polaroid {
+            background: rgba(0, 0, 0, 0.137);
+            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40vh;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            .blue_lock_polaroid div {
+                color: antiquewhite;
+                .blue_lock_polaroid div button {
+                    color: black;
+                    margin: 7px;
+                    display: inline;
+                }
+            }            
+            .blue_lock_polaroid_picture{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+        .chainsaw_polaroid {
+            background: rgba(0, 0, 0, 0.137);
+            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40vh;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            .chainsaw_polaroid div {
+                color: antiquewhite;
+                .chainsaw_polaroid div button {
+                    color: black;
+                    margin: 7px;
+                    display: inline;
+                }
+            }
+            .chainsaw_polaroid_picture {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+        .jujutsu_polaroid {
+            background: rgba(0, 0, 0, 0.137);
+            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40vh;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            .jujutsu_polaroid div {
+                color: antiquewhite;
+                .jujutsu_polaroid div button {
+                    color: black;
+                    margin: 7px;
+                    display: inline;
+                }
+            }
+            .jujutsu_polaroid_picture{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+        .revengers_polaroid {
+            background: rgba(0, 0, 0, 0.137);
+            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40vh;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: aliceblue;
+            .revengers_polaroid_picture{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

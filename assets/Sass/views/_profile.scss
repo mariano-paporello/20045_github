@@ -1,0 +1,29 @@
+/*Profile main*/
+.profile_background {
+    background-color: rgb(85, 11, 11);
+
+    .title_profile {
+        text-align: center;
+    }
+
+    .profile_data {
+        display: flex;
+        justify-content: center;
+
+        .data {
+            text-align: center;
+            text-decoration: solid;
+            background-color: black;
+            color: orange;
+            margin: 10px 10px;
+        }
+
+        .compras {
+            text-align: center;
+            text-decoration: solid;
+            background-color: black;
+            color: orange;
+            margin: 10px 10px;
+        }
+    }
+}
