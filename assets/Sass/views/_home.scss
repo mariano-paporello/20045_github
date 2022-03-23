@@ -1,0 +1,51 @@
+/*Main of Index*/
+.body_index{
+    display: grid;
+    grid-auto-rows: auto auto 1fr auto;
+    .background_index {
+        background-size:cover;
+        background-attachment: local;
+        .polaroid {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            background-color: rgb(12, 12, 12);
+            margin-bottom: 25px;
+            margin-top: 20px;
+            .img_content {
+                text-align: center;
+                padding: 10px 20px;
+                color: rgb(244, 140, 6);
+            }
+        }
+        .tenor-gif-embed {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-bottom: 1vh;
+        }
+    }
+    .bestseller_section {
+        background-color: rgb(39, 3, 3);
+        &_title {
+            color: rgb(252, 151, 0);
+            margin-left: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

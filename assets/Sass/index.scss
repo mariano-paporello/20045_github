@@ -1,0 +1,15 @@
+/* Globales y variables*/
+@import './misc/variables';
+@import './misc/normalize';
+
+/*Partials*/
+@import './partials/header';
+@import './partials/footer';
+
+/*Vistas*/
+@import './views/home';
+@import './views/comics';
+@import './views/manga';
+@import './views/lightNovels';
+@import './views/contactUs';
+@import './views/profile';
