@@ -1,10 +1,12 @@
 /* Main of Manga*/
 
 .background_manga {
+    background-image: url(../images/backgroud-image.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    body main .manga_section{
+    
+    .manga_section{
         display: flex;
         flex-wrap: wrap;
         align-content: center;
@@ -22,19 +24,18 @@
             width: 40vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            .blue_lock_polaroid div {
-                color: antiquewhite;
+            color: antiquewhite;
                 .blue_lock_polaroid div button {
                     color: black;
                     margin: 7px;
                     display: inline;
                 }
-            }            
-            .blue_lock_polaroid_picture{
-                width: 100%;
-                height: auto;
-                border-radius: 10px;
-            }
+                       
+        }
+        .blue_lock_polaroid_picture{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
         .chainsaw_polaroid {
             background: rgba(0, 0, 0, 0.137);
@@ -47,19 +48,21 @@
             width: 40vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            .chainsaw_polaroid div {
-                color: antiquewhite;
-                .chainsaw_polaroid div button {
-                    color: black;
-                    margin: 7px;
-                    display: inline;
-                }
-            }
+            color: antiquewhite;
+
             .chainsaw_polaroid_picture {
                 width: 100%;
                 height: auto;
                 border-radius: 10px;
             }
+            .chainsaw_polaroid div button {
+                color: black;
+                    margin: 7px;
+                    display: inline;
+                }
+            
+
+            
         }
         .jujutsu_polaroid {
             background: rgba(0, 0, 0, 0.137);
@@ -72,14 +75,14 @@
             width: 40vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            .jujutsu_polaroid div {
-                color: antiquewhite;
+             color: antiquewhite;
+
                 .jujutsu_polaroid div button {
                     color: black;
                     margin: 7px;
                     display: inline;
                 }
-            }
+            
             .jujutsu_polaroid_picture{
                 width: 100%;
                 height: auto;

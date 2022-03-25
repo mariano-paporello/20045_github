@@ -3,8 +3,10 @@
     display: grid;
     grid-auto-rows: auto auto 1fr auto;
     .background_index {
+        background-image: url(../images/index/backgroud-image2.jpg);
         background-size:cover;
         background-attachment: local;
+        background-repeat: no-repeat;
         .polaroid {
             display: block;
             margin-left: auto;
@@ -33,7 +35,26 @@
             color: rgb(252, 151, 0);
             margin-left: 25px;
             margin-top: 10px;
-            margin-bottom: 10px;
+            padding-bottom: 10px;
+
+        }
+        .carnage_polaroid {
+            background: rgba(0, 0, 0, 0.137);
+            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40vh;
+            margin-bottom: 20px;
+            color: aliceblue;
+            
+            .carnage_polaroid_picture {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
         }
     }
 }
