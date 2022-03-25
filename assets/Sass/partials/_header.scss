@@ -19,6 +19,7 @@ li a:hover:not(.active) {
 
 a:active {
     color: rgb(0, 0, 0);
+    border-bottom: 3px solid crimson;
 }
 
 header {
