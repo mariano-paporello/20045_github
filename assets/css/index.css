@@ -19,9 +19,6 @@ body {
   grid-auto-rows: auto 1fr auto; }
 
 /*!  general */
-picture {
-  min-width: 320px; }
-
 li form input {
   width: 13vw; }
 
@@ -371,20 +368,40 @@ footer {
 /*Profile main*/
 .profile_background {
   background-color: #550b0b; }
+  .profile_background .back {
+    background-color: #161515;
+    height: 80vh; }
   .profile_background .title_profile {
-    text-align: center; }
+    text-align: center;
+    color: orange; }
   .profile_background .profile_data {
     display: flex;
+    align-items: flex-start;
     justify-content: center; }
     .profile_background .profile_data .data {
       text-align: center;
+      flex-basis: 40%;
       text-decoration: solid;
       background-color: black;
       color: orange;
-      margin: 10px 10px; }
+      margin: 10px 10px;
+      border-radius: 10px; }
+      .profile_background .profile_data .data .separation {
+        padding: 1vh 1vw; }
     .profile_background .profile_data .compras {
       text-align: center;
+      flex-basis: 50%;
       text-decoration: solid;
       background-color: black;
       color: orange;
-      margin: 10px 10px; }
+      margin: 10px 10px;
+      border-radius: 10px; }
+      .profile_background .profile_data .compras .paragraph_compras {
+        padding: 1vh 1vw; }
+      .profile_background .profile_data .compras .selled_picture {
+        display: flex;
+        justify-content: center; }
+        .profile_background .profile_data .compras .selled_picture .selled_item_img {
+          border-radius: 10px;
+          height: 30vh;
+          margin: 1vh 1vw; }

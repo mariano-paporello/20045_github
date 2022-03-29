@@ -51,20 +51,62 @@
         </nav>
     </Header>
     <main class="profile_background">
-        <h1 class="title_profile">Mi cuenta</h1>
-        <div class="profile_data">
-            <div class="data">
-                <h2> Data </h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda facilis dolorem iusto
-                magnam eos odit repellat quaerat adipisci repellendus quam nihil hic, voluptates suscipit eligendi
-                soluta
-                ullam aliquam vitae est!
+        <div class="back">
+            <h1 class="title_profile">Profile</h1>
+            <div class="profile_data">
+                <div class="data">
+                    <form action="">
+                        <fieldset>
+                            <legend>
+                                <h2> Data </h2>
+                            </legend>
+                            <P class="separation"> Sex:
+                                <input type="radio" name="encuesta" value="Men">
+                                <label for="Men">Men</label>
+                                <input type="radio" name="encuesta" value="Woman">
+                                <label for="Woman">Woman</label>
+                                <input type="radio" name="encuesta" value="Other">
+                                <label for="Other">Other</label>
+                            </P>
+                            <P class="separation">Name And Surname:
+                                <input type="text" name="username" placeholder="Name And Surname">
 
-            </div>
-            <div class="compras">
-                <h2> Mis compras</h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, delectus iusto!
-                Quos
-                nam dolorem placeat accusamus corrupti, maxime quis illum distinctio aspernatur maiores, delectus a eos
-                provident odit, aliquam inventore?
+                                <p class="separation">E-mail:
+                                    <input type="email" name="Gmail" placeholder="******@gmail.com">
+                                </p>
+                                <p class="separation">Statu:
+                                    <select name="Estado civil" id="">
+                                        <Option value="Married">Married</Option>
+                                        <option value="Lonely">Lonely</option>
+                                        <option value="In something">In something</option>
+                                    </select>
+                                </p>
+                                <p class="separation">Do you think you deserve to receive our superior notifications?
+                                    <form action="">
+                                        <input type="checkbox" name="" id="">
+                                    </form>
+                                </p>
+                                <p class="separation">
+                                    <input type="submit" value="Send">
+                                    <input type="reset" value="Reset">
+                                </p>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="compras">
+                    <h2> Mis compras</h2>
+                    <hr>
+                    <p class="paragraph_compras"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+                        delectus iusto!
+                        Quos
+                        nam dolorem placeat accusamus corrupti, maxime quis illum distinctio aspernatur maiores,
+                        delectus a eos
+                        provident odit, aliquam inventore?
+                    </p>
+                    <picture class="selled_picture">
+                        <img class="selled_item_img" src="../images/comics/carnage absolute.jpg" alt="carnage absolute">
+                    </picture>
+                </div>
             </div>
         </div>
     </main>
