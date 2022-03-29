@@ -41,7 +41,8 @@ li a:hover:not(.active) {
   border: 1px solid #0c0c0c; }
 
 a:active {
-  color: black; }
+  color: black;
+  border-bottom: 3px solid crimson; }
 
 header {
   background-color: #370617; }
@@ -50,7 +51,7 @@ header {
     min-width: 100%; }
     header nav .menu_div {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       min-height: inherit; }
       header nav .menu_div .menu_title {
@@ -69,7 +70,7 @@ header {
           font-size: 2vh;
           padding: 3vh;
           transition: all .3s ease-in-out; }
-        header nav .menu_div .menu_link .light_novel_link_ {
+        header nav .menu_div .menu_link #light_novel_link_ {
           padding: 3vh 1vw; }
 
 /* Media Queries*/
@@ -81,72 +82,37 @@ header {
       justify-content: space-between;
       flex-grow: 1; }
       .menu_div .menu_link li a {
-        padding: 0 3vh; }
+        padding: 0 3vw;
+        display: flex;
+        justify-content: center; }
       .menu_div .menu_link li form input {
         width: 10vw 0; }
-      .menu_div .menu_link .light_novel_link_ {
-        padding: 0vh 3vh; } }
+      .menu_div .menu_link #light_novel_link_ {
+        padding-bottom: 5px; } }
 
 @media screen and (max-width: 730px) {
-  .light_novel_link_ {
+  #light_novel_link_ {
     padding: 2vh 0; } }
 
 @media screen and (max-width: 570px) {
-  .menu_link {
-    justify-content: space-between;
-    flex-grow: 1; }
-    .menu_link .light_novel_link_ {
-      padding: 2vh 1vh; }
-    .menu_link li a {
-      font-size: 2vh;
-      padding: 0 5vh;
-      transition: all .3s ease-in-out; } }
+  header nav .menu_div {
+    display: grid;
+    grid-template-rows: 1fr 1fr; }
+    header nav .menu_div .menu_title {
+      justify-self: center; }
+    header nav .menu_div .menu_link {
+      justify-content: space-between;
+      flex-grow: 1; }
+      header nav .menu_div .menu_link #light_novel_link_ {
+        padding: 0 10px; }
+      header nav .menu_div .menu_link li a {
+        font-size: 2vh;
+        padding: 0 4vw;
+        transition: all .3s ease-in-out; } }
 
 @media screen and (max-width: 480px) {
-  .light_novel_link_ {
+  #light_novel_link_ {
     padding: 0vh 1vh; } }
-
-@media screen and (max-width: 400px) {
-  .menu_div {
-    justify-content: flex-start;
-    flex-basis: 50%; }
-    .menu_div .menu_title {
-      flex-grow: 1;
-      width: 50vw;
-      height: 4vh;
-      justify-content: flex-start; }
-    .menu_div .dropdown {
-      display: flex;
-      position: relative;
-      flex-basis: 50%;
-      justify-content: right; }
-      .menu_div .dropdown .dropdown_logo {
-        opacity: 1;
-        width: 15vw;
-        height: 4vh; }
-      .menu_div .dropdown .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #2b0202;
-        min-width: 20vw;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        border: 1px solid black;
-        margin-top: 5vh; }
-        .menu_div .dropdown .dropdown-content .dropdown-content a {
-          color: white;
-          padding: 1vw 1vh;
-          text-decoration: none;
-          display: block;
-          font-size: x-small;
-          border: 1px solid black; }
-        .menu_div .dropdown .dropdown-content .dropdown-content a:hover {
-          background-color: #790707;
-          color: rgba(255, 166, 0, 0.973); }
-      .menu_div .dropdown .dropdown:hover .dropdown-content {
-        display: block; }
-    .menu_div .menu_link {
-      display: none; } }
 
 /* ! footer*/
 footer {
@@ -166,12 +132,15 @@ footer {
 /*Main of Index*/
 .body_index {
   display: grid;
-  grid-auto-rows: auto auto 1fr auto; }
+  grid-auto-rows: auto auto 1fr auto;
+  /*Part of bestseller here contain*/ }
   .body_index .background_index {
     background-image: url(../images/index/backgroud-image2.jpg);
     background-size: cover;
     background-attachment: local;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    /*the main polarodi where it show a big image and a message*/
+    /*an animation*/ }
     .body_index .background_index .polaroid {
       display: block;
       margin-left: auto;
@@ -217,7 +186,9 @@ footer {
 .comics_background {
   background-image: url(../images/comics/backgroud_image_comic.jpg);
   background-position: center;
-  background-size: contain; }
+  background-size: contain;
+  /*Section of comics */
+  /*The polaroids and their respective pictures*/ }
   .comics_background .section_comics {
     display: flex;
     align-items: center;

@@ -31,7 +31,7 @@ header {
 
         .menu_div {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
             min-height: inherit;
 
@@ -58,7 +58,7 @@ header {
                     transition: all .3s ease-in-out;
                 }
 
-                .light_novel_link_ {
+                #light_novel_link_ {
                     padding: 3vh 1vw;
                 }
             }
@@ -77,107 +77,56 @@ header {
             flex-grow: 1;
 
             li a {
-                padding: 0 3vh;
+                padding: 0 3vw;
+                display: flex;
+                justify-content: center;
             }
 
             li form input {
                 width: 10vw 0;
             }
 
-            .light_novel_link_ {
-                padding: 0vh 3vh;
+            #light_novel_link_ {
+                padding-bottom: 5px;
+                
             }
         }
     }
 }
 
 @media screen and (max-width: 730px) {
-    .light_novel_link_ {
+    #light_novel_link_ {
         padding: 2vh 0;
     }
 }
 
 @media screen and (max-width: 570px) {
-
-    .menu_link {
+    header nav .menu_div{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+        .menu_title{
+            justify-self: center;
+        }
+        .menu_link {
         justify-content: space-between;
         flex-grow: 1;
 
-        .light_novel_link_ {
-            padding: 2vh 1vh;
-        }
+            #light_novel_link_ {
+            padding: 0 10px;
+            }
 
-        li a {
+            li a {
             font-size: 2vh;
-            padding: 0 5vh;
+            padding: 0 4vw;
             transition: all .3s ease-in-out;
+            }
         }
     }
 }
 
 @media screen and (max-width: 480px) {
-    .light_novel_link_ {
+    #light_novel_link_ {
         padding: 0vh 1vh;
     }
 }
 
-@media screen and (max-width: 400px) {
-
-    .menu_div {
-        justify-content: flex-start;
-        flex-basis: 50%;
-
-        .menu_title {
-            flex-grow: 1;
-            width: 50vw;
-            height: 4vh;
-            justify-content: flex-start;
-        }
-
-        .dropdown {
-            display: flex;
-            position: relative;
-            flex-basis: 50%;
-            justify-content: right;
-
-            .dropdown_logo {
-                opacity: 1;
-                width: 15vw;
-                height: 4vh;
-            }
-
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #2b0202;
-                min-width: 20vw;
-                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                z-index: 1;
-                border: 1px solid black;
-                margin-top: 5vh;
-
-                .dropdown-content a {
-                    color: rgb(255, 255, 255);
-                    padding: 1vw 1vh;
-                    text-decoration: none;
-                    display: block;
-                    font-size: x-small;
-                    border: 1px solid black;
-                }
-
-                .dropdown-content a:hover {
-                    background-color: #790707;
-                    color: rgba(255, 166, 0, 0.973)
-                }
-            }
-
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-        }
-
-        .menu_link {
-            display: none;
-        }
-    }
-}

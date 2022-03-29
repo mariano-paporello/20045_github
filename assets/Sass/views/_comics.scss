@@ -4,13 +4,14 @@
     background-image: url(../images/comics/backgroud_image_comic.jpg);
     background-position: center;
     background-size: contain;
-    
+/*Section of comics */
     .section_comics {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         gap: 15px;
     }
+/*The polaroids and their respective pictures*/
     .carnage_polaroid {
         background: rgba(0, 0, 0, 0.137);
         box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
