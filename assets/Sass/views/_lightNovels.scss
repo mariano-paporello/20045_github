@@ -1,10 +1,36 @@
 /*Main of Light Novels*/
 .background_light_novel {
     background-image: url(../images/light_novel_background_image.jpg);
-     table {
-        color: aliceblue;
-        border-radius: 1px;
-        border: 2px;
-    }    
+    .light_novel_title{
+    color: orange;
+        text-align: center;
+    }
+    .light_novel_section{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: baseline;
+        flex-grow: 1;
+        gap: 15px;
+    }
+    .goblin_slayer {
+        background: rgba(0, 0, 0, 0.137);
+        box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: antiquewhite;
+
+        &_picture {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
 }
 

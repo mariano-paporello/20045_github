@@ -22,6 +22,25 @@ body {
 li form input {
   width: 13vw; }
 
+.polaroid_content {
+  text-align: center;
+  padding: 0vh 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.add_to_cart_buttons {
+  padding: 2px;
+  background-image: url(../images/Buttons-general/buttons-bc.jpg);
+  background-size: cover;
+  color: whitesmoke; }
+
+button:hover {
+  color: orange; }
+
+hr {
+  border: inset orange; }
+
 /*Partials*/
 /*Header Menu styles */
 a:link {
@@ -173,7 +192,8 @@ footer {
       margin-right: auto;
       width: 40vh;
       margin-bottom: 20px;
-      color: aliceblue; }
+      color: aliceblue;
+      margin-top: 20px; }
       .body_index .bestseller_section .carnage_polaroid .carnage_polaroid_picture {
         width: 100%;
         height: auto;
@@ -184,74 +204,78 @@ footer {
   background-image: url(../images/comics/backgroud_image_comic.jpg);
   background-position: center;
   background-size: contain;
-  /*Section of comics */
-  /*The polaroids and their respective pictures*/ }
+  /*Section of comics */ }
+  .comics_background .comics_title {
+    color: orange;
+    text-align: center; }
   .comics_background .section_comics {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-wrap: wrap;
-    gap: 15px; }
-  .comics_background .carnage_polaroid {
-    background: rgba(0, 0, 0, 0.137);
-    box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40vh;
-    margin-top: 20px;
-    color: aliceblue; }
-    .comics_background .carnage_polaroid .carnage_polaroid_picture {
-      width: 100%;
-      height: auto;
-      border-radius: 10px; }
-  .comics_background .daredevil_polaroid {
-    background: rgba(0, 0, 0, 0.137);
-    box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40vh;
-    margin-top: 20px;
-    color: aliceblue; }
-    .comics_background .daredevil_polaroid .daredevil_polaroid_picture {
-      width: 100%;
-      height: auto;
-      border-radius: 10px; }
-  .comics_background .conan_polaroid {
-    background: rgba(0, 0, 0, 0.137);
-    box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40vh;
-    margin-top: 20px;
-    color: aliceblue; }
-    .comics_background .conan_polaroid .conan_polaroid_picture {
-      width: 100%;
-      height: auto;
-      border-radius: 10px; }
-  .comics_background .hulk_polaroid {
-    background: rgba(0, 0, 0, 0.137);
-    box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40vh;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: aliceblue; }
-    .comics_background .hulk_polaroid .hulk_polaroid_picture {
-      width: 100%;
-      height: auto;
-      border-radius: 10px; }
+    gap: 15px;
+    margin-bottom: 10px;
+    /*The polaroids and their respective pictures*/ }
+    .comics_background .section_comics .carnage_polaroid {
+      background: rgba(0, 0, 0, 0.137);
+      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40vh;
+      margin-top: 20px;
+      color: aliceblue; }
+      .comics_background .section_comics .carnage_polaroid .carnage_polaroid_picture {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; }
+    .comics_background .section_comics .daredevil_polaroid {
+      background: rgba(0, 0, 0, 0.137);
+      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40vh;
+      margin-top: 20px;
+      color: aliceblue; }
+      .comics_background .section_comics .daredevil_polaroid .daredevil_polaroid_picture {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; }
+    .comics_background .section_comics .conan_polaroid {
+      background: rgba(0, 0, 0, 0.137);
+      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40vh;
+      margin-top: 20px;
+      color: aliceblue; }
+      .comics_background .section_comics .conan_polaroid .conan_polaroid_picture {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; }
+    .comics_background .section_comics .hulk_polaroid {
+      background: rgba(0, 0, 0, 0.137);
+      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40vh;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: aliceblue; }
+      .comics_background .section_comics .hulk_polaroid .hulk_polaroid_picture {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; }
 
 /* Main of Manga*/
 .background_manga {
@@ -259,10 +283,14 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
+  .background_manga .manga_title {
+    color: orange;
+    text-align: center; }
   .background_manga .manga_section {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    align-items: baseline;
     flex-grow: 1;
     gap: 15px; }
     .background_manga .manga_section .blue_lock_polaroid {
@@ -277,14 +305,10 @@ footer {
       margin-top: 20px;
       margin-bottom: 20px;
       color: antiquewhite; }
-      .background_manga .manga_section .blue_lock_polaroid .blue_lock_polaroid div button {
-        color: black;
-        margin: 7px;
-        display: inline; }
-    .background_manga .manga_section .blue_lock_polaroid_picture {
-      width: 100%;
-      height: auto;
-      border-radius: 10px; }
+      .background_manga .manga_section .blue_lock_polaroid_picture {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; }
     .background_manga .manga_section .chainsaw_polaroid {
       background: rgba(0, 0, 0, 0.137);
       box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
@@ -336,7 +360,7 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: aliceblue; }
+      color: antiquewhite; }
       .background_manga .manga_section .revengers_polaroid .revengers_polaroid_picture {
         width: 100%;
         height: auto;
@@ -345,14 +369,38 @@ footer {
 /*Main of Light Novels*/
 .background_light_novel {
   background-image: url(../images/light_novel_background_image.jpg); }
-  .background_light_novel table {
-    color: aliceblue;
-    border-radius: 1px;
-    border: 2px; }
+  .background_light_novel .light_novel_title {
+    color: orange;
+    text-align: center; }
+  .background_light_novel .light_novel_section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: baseline;
+    flex-grow: 1;
+    gap: 15px; }
+  .background_light_novel .goblin_slayer {
+    background: rgba(0, 0, 0, 0.137);
+    box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: antiquewhite; }
+    .background_light_novel .goblin_slayer_picture {
+      width: 100%;
+      height: auto;
+      border-radius: 10px; }
 
 /*Main of Contact Us*/
 .contact_background {
-  background-color: #220808;
+  background-image: url(../images/Profile/background_profile.jpg);
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center; }
   .contact_background .form {
@@ -367,7 +415,7 @@ footer {
 
 /*Profile main*/
 .profile_background {
-  background-color: #550b0b; }
+  background-color: #220808; }
   .profile_background .back {
     background-color: #161515;
     height: 80vh; }
