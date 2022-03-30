@@ -19,15 +19,6 @@
         <nav class="container nav">
             <div class="menu_div">
                 <img class="menu_title" src="../images/overlordheader.jpg" alt="logo of the header"></img>
-                <div class="dropdown">
-                    <button class="dropdown_button"><img class="dropdown_logo" src="../images/Dropdown.png" alt="Dropdown logo"></button>
-                    <div class="dropdown-content">
-                        <a href="../../index.html">Home</a>
-                        <a href="./comics.html">Comics</a>
-                        <a href="./manga.html">Manga</a>
-                        <a href="./lightNovels.html">Light Novels</a>
-                    </div>
-                </div>
                 <ul class="menu_link">
                     <li>
                         <a href="../../index.html">
@@ -60,20 +51,47 @@
         </nav>
     </Header>
     <main class="profile_background">
-        <h1 class="title_profile">Mi cuenta</h1>
-        <div class="profile_data">
-            <div class="data">
-                <h2> Data </h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda facilis dolorem iusto
-                magnam eos odit repellat quaerat adipisci repellendus quam nihil hic, voluptates suscipit eligendi
-                soluta
-                ullam aliquam vitae est!
+        <div class="back">
+            <h1 class="title_profile">Profile</h1>
+            <div class="profile_data">
+                <div class="data">
+                    <form action="">
+                        <fieldset>
+                            <legend>
+                                <h2> Data of the user</h2>
+                            </legend>
+                            <P class="separation"> Sex:
+                                <input type="radio" name="encuesta" value="Men">
+                                <label for="Men">Men</label>
+                                <input type="radio" name="encuesta" value="Woman">
+                                <label for="Woman">Woman</label>
+                                <input type="radio" name="encuesta" value="Other">
+                                <label for="Other">Other</label>
+                            </P>
+                            <P class="separation">Username:
+                                <input type="text" name="username" placeholder="Ex:PepitoXXX_progamer">
 
-            </div>
-            <div class="compras">
-                <h2> Mis compras</h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, delectus iusto!
-                Quos
-                nam dolorem placeat accusamus corrupti, maxime quis illum distinctio aspernatur maiores, delectus a eos
-                provident odit, aliquam inventore?
+                                <p class="separation">E-mail:
+                                    <input type="email" name="Gmail" placeholder="******@gmail.com">
+                                </p>
+
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="compras">
+                    <h2> Mis compras</h2>
+                    <hr>
+                    <p class="paragraph_compras"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+                        delectus iusto!
+                        Quos
+                        nam dolorem placeat accusamus corrupti, maxime quis illum distinctio aspernatur maiores,
+                        delectus a eos
+                        provident odit, aliquam inventore?
+                    </p>
+                    <picture class="selled_picture">
+                        <img class="selled_item_img" src="../images/comics/carnage absolute.jpg" alt="carnage absolute">
+                    </picture>
+                </div>
             </div>
         </div>
     </main>

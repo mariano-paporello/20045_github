@@ -1,29 +1,52 @@
 /*Profile main*/
 .profile_background {
-    background-color: rgb(85, 11, 11);
-
+    background-color: rgb(34, 8, 8);;
+    .back{
+        background-color: rgb(22, 21, 21);
+        height: 80vh;
+    }
     .title_profile {
         text-align: center;
+        color: orange;
     }
 
     .profile_data {
         display: flex;
+        align-items:flex-start;
         justify-content: center;
 
         .data {
             text-align: center;
+            flex-basis: 40%;
             text-decoration: solid;
             background-color: black;
             color: orange;
             margin: 10px 10px;
+            border-radius: 10px;
+            .separation{
+                padding: 1vh 1vw; }
         }
 
         .compras {
             text-align: center;
+            flex-basis: 50%;
             text-decoration: solid;
             background-color: black;
             color: orange;
             margin: 10px 10px;
+            border-radius: 10px;
+            .paragraph_compras{
+                padding: 1vh 1vw;
+            }
+            .selled_picture{
+                display: flex;
+                justify-content: center;
+                .selled_item_img{
+                    border-radius: 10px;
+                    height: 30vh;
+                    margin: 1vh 1vw;
+                }
+            }
         }
     }
 }

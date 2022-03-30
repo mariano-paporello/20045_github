@@ -1,8 +1,11 @@
 /*Main of Contact Us*/
 .contact_background {
-    background-color: rgb(34, 8, 8);
+    background-image: url(../images/Profile/background_profile.jpg);
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
+
     .form {
         color: whitesmoke;
         text-align: center;
@@ -10,10 +13,9 @@
         margin-bottom: 5vh;
         background-color: black;
         border-radius: 2vw;
-        fieldset p{
+
+        fieldset p {
             padding: 1vh;
         }
     }
 }
-
-

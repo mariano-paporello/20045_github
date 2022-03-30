@@ -18,58 +18,50 @@
 
     <Header>
         <nav class="container nav">
-        <div class="menu_div">
-            <img class="menu_title" src="../images/overlordheader.jpg" alt="logo of the header"></img>
-            <div class="dropdown">
-                <button class="dropdown_button"><img class="dropdown_logo" src="../images/Dropdown.png"" alt="Dropdown logo"></button>
-                <div class="dropdown-content">
-                    <a href="../../index.html">Home</a>
-                    <a href="./comics.html">Comics</a>
-                    <a href="./manga.html">Manga</a>
-                    <a href="./lightNovels.html">Light Novels</a>
-                    <a href="./profile.html">Profile</a>
-                </div>
-            </div>
-            <ul class="menu_link">
-                <li>
-                    <a href="../../index.html">
-                        <b>Home</b>
-                    </a>
-                </li>
+            <div class="menu_div">
+                <img class="menu_title" src="../images/overlordheader.jpg" alt="logo of the header"></img>
+                <ul class="menu_link">
+                    <li>
+                        <a href="../../index.html">
+                            <b>Home</b>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="./comics.html">
-                        <b>Comics</b>
-                    </a>
-                </li>
-                <li>
-                    <a href="./manga.html">
-                        <b> Manga</b>
-                    </a>
-                </li>
-                <li>
-                    <a class="light_novel_link_" href="./lightNovels.html">
-                        <b> Light Novels</b>
-                    </a>
-                </li>
-                <li>
-                    <form action="">
-                        <input type="search" placeholder="Search">
-                    </form>
-                </li>
-                <li>
-                    <a href="./profile.html">
-                        <b> Profile</b>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                    <li>
+                        <a href="./comics.html">
+                            <b>Comics</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./manga.html">
+                            <b> Manga</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="light_novel_link_" href="./lightNovels.html">
+                            <b> Light Novels</b>
+                        </a>
+                    </li>
+                    <li>
+                        <form action="">
+                            <input type="search" placeholder="Search">
+                        </form>
+                    </li>
+                    <li>
+                        <a href="./profile.html">
+                            <b> Profile</b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </Header>
     <main class="contact_background">
         <form class="form" action="">
             <Fieldset>
-                <legend> Contact Us </legend>
+                <legend>
+                    <h3> Contact Us </h3>
+                </legend>
                 <P> Sex:
                     <input type="radio" name="encuesta" value="Men">
                     <label for="Men">Men</label>
@@ -78,13 +70,13 @@
                     <input type="radio" name="encuesta" value="Other">
                     <label for="Other">Other</label>
                 </P>
-                <P>Name And Surname
+                <P>Name And Surname:
                     <input type="text" name="username" placeholder="Name And Surname">
 
-                    <p>E-mail
+                    <p>E-mail:
                         <input type="email" name="Gmail" placeholder="******@gmail.com">
                     </p>
-                    <p>Status<select name="Estado civil" id="">
+                    <p>Status: <select name="Estado civil" id="">
                             <Option value="Married">Married</Option>
                             <option value="Lonely">Lonely</option>
                             <option value="In something">In something</option>
@@ -95,7 +87,7 @@
                             <input type="checkbox" name="" id="">
                         </form>
                     </p>
-                    <textarea name="Mesagge" id="" cols="30" rows="10" placeholder="Commments"></textarea>
+                    <textarea name="Mesagge" id="" cols="30" rows="5" placeholder="Any comments"></textarea>
                     <p>
                         <input type="submit" value="Send">
                         <input type="reset" value="Reset">

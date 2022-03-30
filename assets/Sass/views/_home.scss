@@ -4,9 +4,10 @@
     grid-auto-rows: auto auto 1fr auto;
     .background_index {
         background-image: url(../images/index/backgroud-image2.jpg);
-        background-size:cover;
+        background-size: cover;
         background-attachment: local;
         background-repeat: no-repeat;
+        /*the main polarodi where it show a big image and a message*/
         .polaroid {
             display: block;
             margin-left: auto;
@@ -21,6 +22,7 @@
                 color: rgb(244, 140, 6);
             }
         }
+        /*an animation*/
         .tenor-gif-embed {
             display: block;
             margin-left: auto;
@@ -29,6 +31,7 @@
             margin-bottom: 1vh;
         }
     }
+    /*Part of bestseller here contain*/
     .bestseller_section {
         background-color: rgb(39, 3, 3);
         &_title {
@@ -49,6 +52,7 @@
             width: 40vh;
             margin-bottom: 20px;
             color: aliceblue;
+            margin-top: 20px;
             
             .carnage_polaroid_picture {
                 width: 100%;
