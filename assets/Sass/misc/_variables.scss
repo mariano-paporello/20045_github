@@ -1,0 +1,16 @@
+/*Variables*/
+$colors:(
+    Principal: orange,
+    secondary: white,
+    background:rgb(39, 3, 3),
+);
+$fonts:(
+    Font-titles:l,
+    Font-text:l
+);
+
+@each $var, $val in $colors{
+    .color--#{$var}{
+        color: #{$val};
+    }
+}

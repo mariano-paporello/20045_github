@@ -7,7 +7,7 @@
         background-size: cover;
         background-attachment: local;
         background-repeat: no-repeat;
-        /*the main polarodi where it show a big image and a message*/
+        /*the main polaroid where it show a big image and a message*/
         .polaroid {
             display: block;
             margin-left: auto;
@@ -19,7 +19,6 @@
             .img_content {
                 text-align: center;
                 padding: 10px 20px;
-                color: rgb(244, 140, 6);
             }
         }
         /*an animation*/
@@ -35,7 +34,7 @@
     .bestseller_section {
         background-color: rgb(39, 3, 3);
         &_title {
-            color: rgb(252, 151, 0);
+            color: map-get($colors, Principal );
             margin-left: 25px;
             margin-top: 10px;
             padding-bottom: 10px;
@@ -51,7 +50,7 @@
             margin-right: auto;
             width: 40vh;
             margin-bottom: 20px;
-            color: aliceblue;
+            color: map-get($colors, secondary);
             margin-top: 20px;
             
             .carnage_polaroid_picture {
