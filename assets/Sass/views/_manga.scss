@@ -7,9 +7,8 @@
     background-repeat: no-repeat;
 
     .manga_title {
-        color: orange;
+        color: map-get($colors, Principal);
         text-align: center;
-        
     }
 
     .manga_section {
@@ -31,7 +30,7 @@
             width: 40vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            color: antiquewhite;
+            color: map-get($colors, secondary);
 
             &_picture {
                 width: 100%;
@@ -53,7 +52,7 @@
             width: 40vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            color: antiquewhite;
+            color: map-get($colors, secondary);
 
             .chainsaw_polaroid_picture {
                 width: 100%;
@@ -82,7 +81,7 @@
             width: 40vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            color: antiquewhite;
+            color: map-get($colors, secondary);
 
             .jujutsu_polaroid div button {
                 color: black;
@@ -108,7 +107,7 @@
             width: 40vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            color: antiquewhite;
+            color: map-get($colors, secondary);
 
             .revengers_polaroid_picture {
                 width: 100%;

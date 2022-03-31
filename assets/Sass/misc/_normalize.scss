@@ -2,7 +2,7 @@
 *,
 *::after,
  *::before {
-    font-family: Quintessential;
+    font-family: 'Syncopate', sans-serif;
     border-left: 20px;
     border-right: 20px;
     margin: 0;
@@ -18,28 +18,4 @@ body {
     display: grid;
     grid-auto-rows: auto 1fr auto;
       
-}
-
-/*!  general */
-li form input{
-    width: 13vw;
-}
-.polaroid_content{
-    text-align: center;
-    padding: 0vh 1vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.add_to_cart_buttons{
-    padding: 2px;
-    background-image:url(../images/Buttons-general/buttons-bc.jpg);
-    background-size: cover;
-    color: whitesmoke;
-}
-button:hover{
-    color: orange;
-}
-hr{
-    border: inset orange;
 }

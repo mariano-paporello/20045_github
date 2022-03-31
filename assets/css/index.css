@@ -1,24 +1,15 @@
 /* Globales y variables*/
-/* Normalize*/
-*,
-*::after,
-*::before {
-  font-family: Quintessential;
-  border-left: 20px;
-  border-right: 20px;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box; }
+/*Variables*/
+.color--Principal {
+  color: orange; }
 
-body {
-  min-height: 100vh;
-  min-width: 100%;
-  display: grid;
-  grid-auto-rows: auto 1fr auto; }
+.color--secondary {
+  color: white; }
 
-/*!  general */
+.color--background {
+  color: #270303; }
+
+/*Helpers*/
 li form input {
   width: 13vw; }
 
@@ -40,6 +31,25 @@ button:hover {
 
 hr {
   border: inset orange; }
+
+/* Normalize*/
+*,
+*::after,
+*::before {
+  font-family: 'Syncopate', sans-serif;
+  border-left: 20px;
+  border-right: 20px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  display: grid;
+  grid-auto-rows: auto 1fr auto; }
 
 /*Partials*/
 /*Header Menu styles */
@@ -69,6 +79,7 @@ header {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      gap: 0;
       min-height: inherit; }
       header nav .menu_div .menu_title {
         color: #ffa500;
@@ -79,9 +90,10 @@ header {
         display: none; }
       header nav .menu_div .menu_link {
         display: flex;
-        flex-basis: 60%;
-        justify-content: space-evenly;
-        align-items: center; }
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        flex-basis: 60%; }
         header nav .menu_div .menu_link li a {
           font-size: 2vh;
           padding: 3vh;
@@ -137,9 +149,10 @@ footer {
 
 .footer_list {
   display: flex;
+  justify-content: center;
   align-items: center;
-  min-height: 10vh;
-  justify-content: center; }
+  gap: 0;
+  min-height: 10vh; }
   .footer_list .footer_link {
     padding: 1vh;
     margin-left: 1vw; }
@@ -155,7 +168,7 @@ footer {
     background-size: cover;
     background-attachment: local;
     background-repeat: no-repeat;
-    /*the main polarodi where it show a big image and a message*/
+    /*the main polaroid where it show a big image and a message*/
     /*an animation*/ }
     .body_index .background_index .polaroid {
       display: block;
@@ -167,8 +180,7 @@ footer {
       margin-top: 20px; }
       .body_index .background_index .polaroid .img_content {
         text-align: center;
-        padding: 10px 20px;
-        color: #f48c06; }
+        padding: 10px 20px; }
     .body_index .background_index .tenor-gif-embed {
       display: block;
       margin-left: auto;
@@ -178,7 +190,7 @@ footer {
   .body_index .bestseller_section {
     background-color: #270303; }
     .body_index .bestseller_section_title {
-      color: #fc9700;
+      color: orange;
       margin-left: 25px;
       margin-top: 10px;
       padding-bottom: 10px; }
@@ -192,7 +204,7 @@ footer {
       margin-right: auto;
       width: 40vh;
       margin-bottom: 20px;
-      color: aliceblue;
+      color: white;
       margin-top: 20px; }
       .body_index .bestseller_section .carnage_polaroid .carnage_polaroid_picture {
         width: 100%;
@@ -210,9 +222,10 @@ footer {
     text-align: center; }
   .comics_background .section_comics {
     display: flex;
+    justify-content: auto;
     align-items: baseline;
-    flex-wrap: wrap;
     gap: 15px;
+    flex-wrap: wrap;
     margin-bottom: 10px;
     /*The polaroids and their respective pictures*/ }
     .comics_background .section_comics .carnage_polaroid {
@@ -304,7 +317,7 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: antiquewhite; }
+      color: white; }
       .background_manga .manga_section .blue_lock_polaroid_picture {
         width: 100%;
         height: auto;
@@ -320,7 +333,7 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: antiquewhite; }
+      color: white; }
       .background_manga .manga_section .chainsaw_polaroid .chainsaw_polaroid_picture {
         width: 100%;
         height: auto;
@@ -340,7 +353,7 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: antiquewhite; }
+      color: white; }
       .background_manga .manga_section .jujutsu_polaroid .jujutsu_polaroid div button {
         color: black;
         margin: 7px;
@@ -360,7 +373,7 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: antiquewhite; }
+      color: white; }
       .background_manga .manga_section .revengers_polaroid .revengers_polaroid_picture {
         width: 100%;
         height: auto;
@@ -406,12 +419,17 @@ footer {
   .contact_background .form {
     color: whitesmoke;
     text-align: center;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin: 5vh 0;
     background-color: black;
-    border-radius: 2vw; }
+    border-radius: 1.5vw;
+    height: 70vh; }
     .contact_background .form fieldset p {
-      padding: 1vh; }
+      padding: 2vh; }
+    .contact_background .form fieldset {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row: 7;
+      height: 65vh; }
 
 /*Profile main*/
 .profile_background {

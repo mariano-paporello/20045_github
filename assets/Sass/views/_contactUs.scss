@@ -5,17 +5,24 @@
     background-size: cover;
     display: flex;
     justify-content: center;
+    
 
     .form {
         color: whitesmoke;
         text-align: center;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin: 5vh 0;
         background-color: black;
-        border-radius: 2vw;
+        border-radius: 1.5vw;
+        height: 70vh;
 
         fieldset p {
-            padding: 1vh;
+            padding: 2vh;
+        }
+        fieldset{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row: 7;
+            height: 65vh;
         }
     }
 }

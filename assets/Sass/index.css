@@ -1,9 +1,22 @@
 /* Globales y variables*/
+/*Variables*/
+.color--Principal {
+  color: orange;
+}
+
+.color--secondary {
+  color: white;
+}
+
+.color--background {
+  color: #270303;
+}
+
 /* Normalize*/
 *,
 *::after,
 *::before {
-  font-family: Quintessential;
+  font-family: 'Syncopate', sans-serif;
   border-left: 20px;
   border-right: 20px;
   margin: 0;
@@ -20,39 +33,6 @@ body {
   display: -ms-grid;
   display: grid;
   grid-auto-rows: auto 1fr auto;
-}
-
-/*!  general */
-li form input {
-  width: 13vw;
-}
-
-.polaroid_content {
-  text-align: center;
-  padding: 0vh 1vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.add_to_cart_buttons {
-  padding: 2px;
-  background-image: url(../images/Buttons-general/buttons-bc.jpg);
-  background-size: cover;
-  color: whitesmoke;
-}
-
-button:hover {
-  color: orange;
-}
-
-hr {
-  border: inset orange;
 }
 
 /*Partials*/
@@ -252,7 +232,7 @@ footer {
   background-size: cover;
   background-attachment: local;
   background-repeat: no-repeat;
-  /*the main polarodi where it show a big image and a message*/
+  /*the main polaroid where it show a big image and a message*/
   /*an animation*/
 }
 
@@ -269,7 +249,6 @@ footer {
 .body_index .background_index .polaroid .img_content {
   text-align: center;
   padding: 10px 20px;
-  color: #f48c06;
 }
 
 .body_index .background_index .tenor-gif-embed {
@@ -285,7 +264,7 @@ footer {
 }
 
 .body_index .bestseller_section_title {
-  color: #fc9700;
+  color: orange;
   margin-left: 25px;
   margin-top: 10px;
   padding-bottom: 10px;
@@ -302,7 +281,7 @@ footer {
   margin-right: auto;
   width: 40vh;
   margin-bottom: 20px;
-  color: aliceblue;
+  color: white;
   margin-top: 20px;
 }
 
@@ -462,7 +441,7 @@ footer {
   width: 40vh;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: antiquewhite;
+  color: white;
 }
 
 .background_manga .manga_section .blue_lock_polaroid_picture {
@@ -483,7 +462,7 @@ footer {
   width: 40vh;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: antiquewhite;
+  color: white;
 }
 
 .background_manga .manga_section .chainsaw_polaroid .chainsaw_polaroid_picture {
@@ -510,7 +489,7 @@ footer {
   width: 40vh;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: antiquewhite;
+  color: white;
 }
 
 .background_manga .manga_section .jujutsu_polaroid .jujutsu_polaroid div button {
@@ -537,7 +516,7 @@ footer {
   width: 40vh;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: antiquewhite;
+  color: white;
 }
 
 .background_manga .manga_section .revengers_polaroid .revengers_polaroid_picture {

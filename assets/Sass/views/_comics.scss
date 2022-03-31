@@ -10,10 +10,8 @@
     }
 /*Section of comics */
     .section_comics {
-        display: flex;
-        align-items: baseline;
+        @include flex(auto, baseline, 15px);
         flex-wrap: wrap;
-        gap: 15px;
         margin-bottom: 10px;
 /*The polaroids and their respective pictures*/
         .carnage_polaroid {
