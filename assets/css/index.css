@@ -1,13 +1,16 @@
 /* Globales y variables*/
 /*Variables*/
-.color--Principal {
-  color: orange; }
+.color--principal {
+  color: #F29602; }
 
 .color--secondary {
-  color: white; }
+  color: #F2EFEA; }
 
-.color--background {
-  color: #270303; }
+.color--backgrounds {
+  color: #3D3D3D; }
+
+.color--darker {
+  color: #000000; }
 
 /*Helpers*/
 li form input {
@@ -27,10 +30,10 @@ li form input {
   color: whitesmoke; }
 
 button:hover {
-  color: orange; }
+  color: #F29602; }
 
 hr {
-  border: inset orange; }
+  border: inset #F29602; }
 
 /* Normalize*/
 *,
@@ -71,10 +74,11 @@ a:active {
   border-bottom: 3px solid crimson; }
 
 header {
-  background-color: #370617; }
+  background-color: #000000; }
   header nav {
     min-height: 10vh;
-    min-width: 100%; }
+    min-width: 100%;
+    border-bottom: solid whitesmoke; }
     header nav .menu_div {
       display: flex;
       justify-content: space-evenly;
@@ -82,18 +86,19 @@ header {
       gap: 0;
       min-height: inherit; }
       header nav .menu_div .menu_title {
-        color: #ffa500;
+        color: #F29602;
         flex-basis: 30%;
-        min-width: 30vw;
-        max-width: 40vw; }
+        max-height: 10vh;
+        max-width: auto; }
       header nav .menu_div .dropdown {
         display: none; }
       header nav .menu_div .menu_link {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         gap: 0;
-        flex-basis: 60%; }
+        gap: 1vw;
+        flex-basis: 70%; }
         header nav .menu_div .menu_link li a {
           font-size: 2vh;
           padding: 3vh;
@@ -144,7 +149,7 @@ header {
 
 /* ! footer*/
 footer {
-  background-color: #370617;
+  background-color: #000000;
   min-height: 10vh; }
 
 .footer_list {
@@ -161,55 +166,51 @@ footer {
 /*Main of Index*/
 .body_index {
   display: grid;
-  grid-auto-rows: auto auto 1fr auto;
-  /*Part of bestseller here contain*/ }
+  grid-auto-rows: auto auto 1fr auto; }
   .body_index .background_index {
-    background-image: url(../images/index/backgroud-image2.jpg);
-    background-size: cover;
-    background-attachment: local;
-    background-repeat: no-repeat;
+    background: #000000;
+    background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+    display: flex;
     /*the main polaroid where it show a big image and a message*/
-    /*an animation*/ }
-    .body_index .background_index .polaroid {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      background-color: #0c0c0c;
-      margin-bottom: 25px;
-      margin-top: 20px; }
-      .body_index .background_index .polaroid .img_content {
-        text-align: center;
-        padding: 10px 20px; }
-    .body_index .background_index .tenor-gif-embed {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      margin-bottom: 1vh; }
-  .body_index .bestseller_section {
-    background-color: #270303; }
-    .body_index .bestseller_section_title {
-      color: orange;
+    /*Part of bestseller here contain*/ }
+    .body_index .background_index .polaroid_about_us {
+      color: #F29602;
       margin-left: 25px;
       margin-top: 10px;
       padding-bottom: 10px; }
-    .body_index .bestseller_section .carnage_polaroid {
-      background: rgba(0, 0, 0, 0.137);
-      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
+    .body_index .background_index .polaroid {
       display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 40vh;
-      margin-bottom: 20px;
-      color: white;
-      margin-top: 20px; }
-      .body_index .bestseller_section .carnage_polaroid .carnage_polaroid_picture {
-        width: 100%;
-        height: auto;
-        border-radius: 10px; }
+      flex-basis: 30%;
+      width: 25vw; }
+      .body_index .background_index .polaroid .img_content {
+        min-width: auto;
+        min-height: 20vh;
+        text-align: center;
+        padding: 10px 20px; }
+    .body_index .background_index .bestseller_section {
+      flex-basis: 70%;
+      flex-grow: 1; }
+      .body_index .background_index .bestseller_section_title {
+        color: #F29602;
+        margin-left: 25px;
+        margin-top: 10px;
+        padding-bottom: 10px; }
+      .body_index .background_index .bestseller_section .carnage_polaroid {
+        background: rgba(0, 0, 0, 0.137);
+        border-radius: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15vw;
+        margin-bottom: 20px;
+        color: #F2EFEA;
+        margin-top: 20px; }
+        .body_index .background_index .bestseller_section .carnage_polaroid .carnage_polaroid_picture {
+          width: 100%;
+          height: auto;
+          border-radius: 10px; }
 
 /*Main of Comics*/
 .comics_background {
@@ -297,7 +298,6 @@ footer {
   background-size: cover;
   background-repeat: no-repeat; }
   .background_manga .manga_title {
-    color: orange;
     text-align: center; }
   .background_manga .manga_section {
     display: flex;
@@ -317,7 +317,7 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: white; }
+      color: #F2EFEA; }
       .background_manga .manga_section .blue_lock_polaroid_picture {
         width: 100%;
         height: auto;
@@ -333,7 +333,7 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: white; }
+      color: #F2EFEA; }
       .background_manga .manga_section .chainsaw_polaroid .chainsaw_polaroid_picture {
         width: 100%;
         height: auto;
@@ -353,7 +353,7 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: white; }
+      color: #F2EFEA; }
       .background_manga .manga_section .jujutsu_polaroid .jujutsu_polaroid div button {
         color: black;
         margin: 7px;
@@ -373,7 +373,7 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: white; }
+      color: #F2EFEA; }
       .background_manga .manga_section .revengers_polaroid .revengers_polaroid_picture {
         width: 100%;
         height: auto;
@@ -383,7 +383,7 @@ footer {
 .background_light_novel {
   background-image: url(../images/light_novel_background_image.jpg); }
   .background_light_novel .light_novel_title {
-    color: orange;
+    color: #F29602;
     text-align: center; }
   .background_light_novel .light_novel_section {
     display: flex;
@@ -435,11 +435,11 @@ footer {
 .profile_background {
   background-color: #220808; }
   .profile_background .back {
-    background-color: #161515;
+    background-color: #3D3D3D;
     height: 80vh; }
   .profile_background .title_profile {
     text-align: center;
-    color: orange; }
+    color: #F29602; }
   .profile_background .profile_data {
     display: flex;
     align-items: flex-start;
@@ -449,7 +449,7 @@ footer {
       flex-basis: 40%;
       text-decoration: solid;
       background-color: black;
-      color: orange;
+      color: #F2EFEA;
       margin: 10px 10px;
       border-radius: 10px; }
       .profile_background .profile_data .data .separation {
@@ -459,7 +459,7 @@ footer {
       flex-basis: 50%;
       text-decoration: solid;
       background-color: black;
-      color: orange;
+      color: #F2EFEA;
       margin: 10px 10px;
       border-radius: 10px; }
       .profile_background .profile_data .compras .paragraph_compras {

@@ -3,60 +3,58 @@
     display: grid;
     grid-auto-rows: auto auto 1fr auto;
     .background_index {
-        background-image: url(../images/index/backgroud-image2.jpg);
-        background-size: cover;
-        background-attachment: local;
-        background-repeat: no-repeat;
+        background: #000000;
+background: linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+background: -webkit-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+background: -moz-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+        display: flex;
         /*the main polaroid where it show a big image and a message*/
+        .polaroid_about_us{
+            color: map-get($colors, principal);
+                margin-left: 25px;
+                margin-top: 10px;
+                padding-bottom: 10px;
+        }
         .polaroid {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-            background-color: rgb(12, 12, 12);
-            margin-bottom: 25px;
-            margin-top: 20px;
+            flex-basis: 30%;
+            width: 25vw;
+            
+            
             .img_content {
+                min-width: auto;
+                min-height: 20vh;
                 text-align: center;
                 padding: 10px 20px;
             }
         }
-        /*an animation*/
-        .tenor-gif-embed {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-            margin-bottom: 1vh;
-        }
-    }
-    /*Part of bestseller here contain*/
-    .bestseller_section {
-        background-color: rgb(39, 3, 3);
-        &_title {
-            color: map-get($colors, Principal );
-            margin-left: 25px;
-            margin-top: 10px;
-            padding-bottom: 10px;
-
-        }
-        .carnage_polaroid {
+        /*Part of bestseller here contain*/
+        .bestseller_section {
+        flex-basis: 70%;
+        flex-grow: 1;
+        
+            &_title {
+                color: map-get($colors, principal);
+                margin-left: 25px;
+                margin-top: 10px;
+                padding-bottom: 10px;
+            }
+            .carnage_polaroid {
             background: rgba(0, 0, 0, 0.137);
-            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
             border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 40vh;
+            width: 15vw;
             margin-bottom: 20px;
             color: map-get($colors, secondary);
             margin-top: 20px;
             
-            .carnage_polaroid_picture {
+                .carnage_polaroid_picture {
                 width: 100%;
                 height: auto;
                 border-radius: 10px;
+                }
             }
         }
     }

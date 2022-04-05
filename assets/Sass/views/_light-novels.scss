@@ -2,7 +2,7 @@
 .background_light_novel {
     background-image: url(../images/light_novel_background_image.jpg);
     .light_novel_title{
-    color: orange;
+    color: map-get($colors, principal );
         text-align: center;
     }
     .light_novel_section{

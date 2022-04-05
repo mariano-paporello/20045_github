@@ -1,6 +1,6 @@
 /* ! footer*/
 footer {
-    background-color: rgb(55, 6, 23);
+    background-color: map-get($colors , darker);
     min-height: 10vh;
 }
 .footer_list {

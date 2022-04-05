@@ -22,8 +22,8 @@ li form input{
     color: whitesmoke;
 }
 button:hover{
-    color: orange;
+    color: map-get($colors, principal );
 }
 hr{
-    border: inset orange;
+    border: inset map-get($colors, principal );
 }

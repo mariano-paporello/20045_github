@@ -23,21 +23,22 @@ a:active {
 }
 
 header {
-    background-color: rgb(55, 6, 23);
+    background-color:map-get($colors, darker);
 
     nav {
         min-height: 10vh;
         min-width: 100%;
+        border-bottom: solid whitesmoke;
 
         .menu_div {
             @include flex(space-evenly, center, 0);
             min-height: inherit;
 
             .menu_title {
-                color: #ffa500;
+                color: map-get($colors, principal );
                 flex-basis: 30%;
-                min-width: 30vw;
-                max-width: 40vw;
+                max-height: 10vh;
+                max-width: auto;
             }
 
             .dropdown {
@@ -45,8 +46,9 @@ header {
             }
 
             .menu_link {
-                @include flex(space-between, center, 0);
-                flex-basis: 60%;
+                @include flex(flex-end, center, 0);
+                gap: 1vw;
+                flex-basis: 70%;
                 li a {
                     font-size: 2vh;
                     padding: 3vh;
