@@ -57,17 +57,17 @@ body {
 /*Partials*/
 /*Header Menu styles */
 a:link {
-  color: white; }
+  color: #F29602; }
 
 a:visited {
-  color: rgba(255, 166, 0, 0.973); }
+  color: #F29602; }
 
 a:hover {
-  color: red; }
+  color: #F2EFEA; }
 
 li a:hover:not(.active) {
-  background-color: #270303;
-  border: 1px solid #0c0c0c; }
+  background-color: #252424;
+  border-bottom: 4px solid #F2EFEA; }
 
 a:active {
   color: black;
@@ -75,36 +75,40 @@ a:active {
 
 header {
   background-color: #000000; }
-  header nav {
+  header .nav {
     min-height: 10vh;
     min-width: 100%;
-    border-bottom: solid whitesmoke; }
-    header nav .menu_div {
+    border-bottom: 1px solid whitesmoke; }
+    header .nav .menu_div {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       gap: 0;
       min-height: inherit; }
-      header nav .menu_div .menu_title {
+      header .nav .menu_div .menu_title {
         color: #F29602;
-        flex-basis: 30%;
-        max-height: 10vh;
-        max-width: auto; }
-      header nav .menu_div .dropdown {
-        display: none; }
-      header nav .menu_div .menu_link {
+        flex-basis: 20%;
+        max-width: auto;
+        padding: 7px; }
+      header .nav .menu_div .menu_link {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         gap: 0;
         gap: 1vw;
         flex-basis: 70%; }
-        header nav .menu_div .menu_link li a {
+        header .nav .menu_div .menu_link li a {
           font-size: 2vh;
           padding: 3vh;
           transition: all .3s ease-in-out; }
-        header nav .menu_div .menu_link #light_novel_link_ {
-          padding: 3vh 1vw; }
+  header .secondary_nav {
+    border-bottom: 1px solid grey; }
+    header .secondary_nav_list {
+      display: flex; }
+      header .secondary_nav_list_item {
+        padding: 1vh 0; }
+        header .secondary_nav_list_item .sales-pages {
+          padding: 1vh 2vw; }
 
 /* Media Queries*/
 @media screen and (max-width: 770px) {
@@ -151,22 +155,21 @@ header {
 footer {
   background-color: #000000;
   min-height: 10vh; }
-
-.footer_list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  min-height: 10vh; }
-  .footer_list .footer_link {
-    padding: 1vh;
-    margin-left: 1vw; }
+  footer .footer_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    min-height: 10vh; }
+    footer .footer_list .footer_link {
+      padding: 1vh;
+      margin-left: 1vw; }
 
 /*Vistas*/
 /*Main of Index*/
 .body_index {
   display: grid;
-  grid-auto-rows: auto auto 1fr auto; }
+  grid-auto-rows: auto 1fr auto; }
   .body_index .background_index {
     background: #000000;
     background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
@@ -293,12 +296,14 @@ footer {
 
 /* Main of Manga*/
 .background_manga {
-  background-image: url(../images/backgroud-image.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%); }
   .background_manga .manga_title {
-    text-align: center; }
+    color: #F29602;
+    text-align: center;
+    border-bottom: 2px solid #F29602; }
   .background_manga .manga_section {
     display: flex;
     flex-wrap: wrap;

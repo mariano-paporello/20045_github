@@ -1,14 +1,15 @@
 /* Main of Manga*/
 
 .background_manga {
-    background-image: url(../images/backgroud-image.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #000000;
+    background: linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -moz-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
 
     .manga_title {
-        color: map-get($colors, Principal);
+        color: map-get($colors, principal);
         text-align: center;
+        border-bottom: 2px solid map-get($colors, principal);
     }
 
     .manga_section {

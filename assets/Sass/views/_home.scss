@@ -1,12 +1,12 @@
 /*Main of Index*/
 .body_index{
     display: grid;
-    grid-auto-rows: auto auto 1fr auto;
+    grid-auto-rows: auto 1fr auto;
     .background_index {
         background: #000000;
-background: linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
-background: -webkit-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
-background: -moz-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -moz-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
         display: flex;
         /*the main polaroid where it show a big image and a message*/
         .polaroid_about_us{
