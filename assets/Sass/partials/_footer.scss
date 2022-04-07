@@ -1,16 +1,44 @@
 /* ! footer*/
 footer {
-    background-color: map-get($colors , darker);
+    background-color: map-get($colors, darker);
     min-height: 10vh;
-    
-    .footer_list {
-        @include flex(center, center, 0);
-        min-height: 10vh;
+    display: flex;
+    justify-content:space-around;
+
+    .copyright {
+        flex-basis: 30%;
+        color: map-get($colors, backgrounds);
+        font-size: small;
+        text-align: center;
+        display: flex;
+        align-items: flex-end
+    }
+
+    .link_contactUs {
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+
         .footer_link {
             padding: 1vh;
-            margin-left: 1vw;
         }
     }
-}
 
+    .icon_list {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 3vw;
+        align-items: center;
+
+        li {
+            margin: 0 5px;
+        };
+    }
+
+    .footer_image {
+        max-height: 30px;
+    }
+
+}
 

@@ -154,16 +154,32 @@ header {
 /* ! footer*/
 footer {
   background-color: #000000;
-  min-height: 10vh; }
-  footer .footer_list {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around; }
+  footer .copyright {
+    flex-basis: 30%;
+    color: #3D3D3D;
+    font-size: small;
+    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    min-height: 10vh; }
-    footer .footer_list .footer_link {
-      padding: 1vh;
-      margin-left: 1vw; }
+    align-items: flex-end; }
+  footer .link_contactUs {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center; }
+    footer .link_contactUs .footer_link {
+      padding: 1vh; }
+  footer .icon_list {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 3vw;
+    align-items: center; }
+    footer .icon_list li {
+      margin: 0 5px; }
+  footer .footer_image {
+    max-height: 30px; }
 
 /*Vistas*/
 /*Main of Index*/
