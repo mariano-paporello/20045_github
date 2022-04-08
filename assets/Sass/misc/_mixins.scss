@@ -15,12 +15,6 @@ li form input{
     flex-wrap: wrap;
     justify-content: center;
 }
-.add_to_cart_buttons{
-    padding: 2px;
-    background-image:url(../images/Buttons-general/buttons-bc.jpg);
-    background-size: cover;
-    color: whitesmoke;
-}
 button:hover{
     color: map-get($colors, principal );
 }

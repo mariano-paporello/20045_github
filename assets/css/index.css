@@ -23,12 +23,6 @@ li form input {
   flex-wrap: wrap;
   justify-content: center; }
 
-.add_to_cart_buttons {
-  padding: 2px;
-  background-image: url(../images/Buttons-general/buttons-bc.jpg);
-  background-size: cover;
-  color: whitesmoke; }
-
 button:hover {
   color: #F29602; }
 
@@ -191,7 +185,6 @@ footer {
     background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
     background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
     background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
-    display: flex;
     /*the main polaroid where it show a big image and a message*/
     /*Part of bestseller here contain*/ }
     .body_index .background_index .polaroid_about_us {
@@ -250,7 +243,6 @@ footer {
     /*The polaroids and their respective pictures*/ }
     .comics_background .section_comics .carnage_polaroid {
       background: rgba(0, 0, 0, 0.137);
-      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       display: block;
@@ -265,7 +257,6 @@ footer {
         border-radius: 10px; }
     .comics_background .section_comics .daredevil_polaroid {
       background: rgba(0, 0, 0, 0.137);
-      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       display: block;
@@ -280,7 +271,6 @@ footer {
         border-radius: 10px; }
     .comics_background .section_comics .conan_polaroid {
       background: rgba(0, 0, 0, 0.137);
-      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       display: block;
@@ -295,7 +285,6 @@ footer {
         border-radius: 10px; }
     .comics_background .section_comics .hulk_polaroid {
       background: rgba(0, 0, 0, 0.137);
-      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       display: block;
@@ -402,7 +391,10 @@ footer {
 
 /*Main of Light Novels*/
 .background_light_novel {
-  background-image: url(../images/light_novel_background_image.jpg); }
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%); }
   .background_light_novel .light_novel_title {
     color: #F29602;
     text-align: center; }
@@ -415,7 +407,6 @@ footer {
     gap: 15px; }
   .background_light_novel .goblin_slayer {
     background: rgba(0, 0, 0, 0.137);
-    box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     display: block;
