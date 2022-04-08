@@ -1,0 +1,16 @@
+.background_createNew{
+    background: #000000;
+    background: linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -moz-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    h1{
+        color: map-get($colors, principal );
+        margin: 20px 1vw;
+        border-bottom: 2px solid map-get($colors, principal);
+    }
+    .create_new{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,12 +1,14 @@
 /*Main of Comics*/
 
 .comics_background {
-    background-image: url(../images/comics/backgroud_image_comic.jpg);
-    background-position: center;
-    background-size: contain;
+    background: #000000;
+    background: linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -moz-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
     .comics_title{
-        color: orange;
-        text-align: center;
+        color: map-get($colors, principal );
+        margin: 20px 1vw;
+        border-bottom: 2px solid map-get($colors, principal);
     }
 /*Section of comics */
     .section_comics {

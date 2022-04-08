@@ -5,8 +5,9 @@
     background: -webkit-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
     background: -moz-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
     .light_novel_title{
-    color: map-get($colors, principal );
-        text-align: center;
+        color: map-get($colors, principal );
+        margin: 20px 1vw;
+        border-bottom: 2px solid map-get($colors, principal);
     }
     .light_novel_section{
         display: flex;

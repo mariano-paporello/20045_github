@@ -226,13 +226,15 @@ footer {
 
 /*Main of Comics*/
 .comics_background {
-  background-image: url(../images/comics/backgroud_image_comic.jpg);
-  background-position: center;
-  background-size: contain;
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
   /*Section of comics */ }
   .comics_background .comics_title {
-    color: orange;
-    text-align: center; }
+    color: #F29602;
+    margin: 20px 1vw;
+    border-bottom: 2px solid #F29602; }
   .comics_background .section_comics {
     display: flex;
     justify-content: auto;
@@ -307,7 +309,7 @@ footer {
   background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%); }
   .background_manga .manga_title {
     color: #F29602;
-    text-align: center;
+    margin: 20px 1vw;
     border-bottom: 2px solid #F29602; }
   .background_manga .manga_section {
     display: flex;
@@ -397,7 +399,8 @@ footer {
   background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%); }
   .background_light_novel .light_novel_title {
     color: #F29602;
-    text-align: center; }
+    margin: 20px 1vw;
+    border-bottom: 2px solid #F29602; }
   .background_light_novel .light_novel_section {
     display: flex;
     flex-wrap: wrap;
@@ -420,6 +423,20 @@ footer {
       width: 100%;
       height: auto;
       border-radius: 10px; }
+
+.background_createNew {
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%); }
+  .background_createNew h1 {
+    color: #F29602;
+    margin: 20px 1vw;
+    border-bottom: 2px solid #F29602; }
+  .background_createNew .create_new {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 /*Main of Contact Us*/
 .contact_background {
@@ -445,13 +462,17 @@ footer {
 
 /*Profile main*/
 .profile_background {
-  background-color: #220808; }
+  background-color: #220808;
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%); }
   .profile_background .back {
-    background-color: #3D3D3D;
     height: 80vh; }
   .profile_background .title_profile {
-    text-align: center;
-    color: #F29602; }
+    color: #F29602;
+    margin: 20px 1vw;
+    border-bottom: 2px solid #F29602; }
   .profile_background .profile_data {
     display: flex;
     align-items: flex-start;

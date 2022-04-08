@@ -1,13 +1,17 @@
 /*Profile main*/
 .profile_background {
-    background-color: rgb(34, 8, 8);;
+    background-color: rgb(34, 8, 8);
+    background: #000000;
+    background: linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -moz-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
     .back{
-        background-color: map-get($colors , backgrounds );
         height: 80vh;
     }
     .title_profile {
-        text-align: center;
-        color: map-get($colors , principal);
+        color: map-get($colors, principal );
+        margin: 20px 1vw;
+        border-bottom: 2px solid map-get($colors, principal);
     }
 
     .profile_data {
