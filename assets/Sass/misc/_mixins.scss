@@ -10,14 +10,15 @@ li form input{
 }
 .polaroid_content{
     text-align: center;
-    padding: 0vh 1vw;
+    padding: 0vh 2vw;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
 }
 button:hover{
     color: map-get($colors, principal );
 }
-hr{
-    border: inset map-get($colors, principal );
+.add_to_cart_buttons{
+    margin-left: 25%;
+    margin-right: 25%;
 }

@@ -2,12 +2,12 @@
 
 .background_manga {
     background: #000000;
-    background: linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
-    background: -webkit-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
-    background: -moz-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
 
     .manga_title {
-        color: map-get($colors, principal );
+        color: map-get($colors, principal);
         margin: 20px 1vw;
         border-bottom: 2px solid map-get($colors, principal);
     }
@@ -22,7 +22,6 @@
 
         .blue_lock_polaroid {
             background: rgba(0, 0, 0, 0.137);
-            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.18);
             display: block;
@@ -31,7 +30,7 @@
             width: 40vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            color: map-get($colors, secondary);
+            color: antiquewhite;
 
             &_picture {
                 width: 100%;
@@ -40,11 +39,10 @@
             }
         }
 
-        
+
 
         .chainsaw_polaroid {
             background: rgba(0, 0, 0, 0.137);
-            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.18);
             display: block;
@@ -53,7 +51,7 @@
             width: 40vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            color: map-get($colors, secondary);
+            color: antiquewhite;
 
             .chainsaw_polaroid_picture {
                 width: 100%;
@@ -66,14 +64,10 @@
                 margin: 7px;
                 display: inline;
             }
-
-
-
         }
 
         .jujutsu_polaroid {
             background: rgba(0, 0, 0, 0.137);
-            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.18);
             display: block;
@@ -82,7 +76,7 @@
             width: 40vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            color: map-get($colors, secondary);
+            color: antiquewhite;
 
             .jujutsu_polaroid div button {
                 color: black;
@@ -99,7 +93,6 @@
 
         .revengers_polaroid {
             background: rgba(0, 0, 0, 0.137);
-            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.18);
             display: block;
@@ -108,7 +101,7 @@
             width: 40vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            color: map-get($colors, secondary);
+            color: antiquewhite;
 
             .revengers_polaroid_picture {
                 width: 100%;

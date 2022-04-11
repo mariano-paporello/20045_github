@@ -18,16 +18,17 @@ li form input {
 
 .polaroid_content {
   text-align: center;
-  padding: 0vh 1vw;
+  padding: 0vh 2vw;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
 
 button:hover {
   color: #F29602; }
 
-hr {
-  border: inset #F29602; }
+.add_to_cart_buttons {
+  margin-left: 25%;
+  margin-right: 25%; }
 
 /* Normalize*/
 *,
@@ -212,13 +213,14 @@ footer {
       .body_index .background_index .bestseller_section .carnage_polaroid {
         background: rgba(0, 0, 0, 0.137);
         border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 15vw;
+        width: 40vh;
+        margin-top: 20px;
         margin-bottom: 20px;
-        color: #F2EFEA;
-        margin-top: 20px; }
+        color: antiquewhite; }
         .body_index .background_index .bestseller_section .carnage_polaroid .carnage_polaroid_picture {
           width: 100%;
           height: auto;
@@ -320,7 +322,6 @@ footer {
     gap: 15px; }
     .background_manga .manga_section .blue_lock_polaroid {
       background: rgba(0, 0, 0, 0.137);
-      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       display: block;
@@ -329,14 +330,13 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: #F2EFEA; }
+      color: antiquewhite; }
       .background_manga .manga_section .blue_lock_polaroid_picture {
         width: 100%;
         height: auto;
         border-radius: 10px; }
     .background_manga .manga_section .chainsaw_polaroid {
       background: rgba(0, 0, 0, 0.137);
-      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       display: block;
@@ -345,7 +345,7 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: #F2EFEA; }
+      color: antiquewhite; }
       .background_manga .manga_section .chainsaw_polaroid .chainsaw_polaroid_picture {
         width: 100%;
         height: auto;
@@ -356,7 +356,6 @@ footer {
         display: inline; }
     .background_manga .manga_section .jujutsu_polaroid {
       background: rgba(0, 0, 0, 0.137);
-      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       display: block;
@@ -365,7 +364,7 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: #F2EFEA; }
+      color: antiquewhite; }
       .background_manga .manga_section .jujutsu_polaroid .jujutsu_polaroid div button {
         color: black;
         margin: 7px;
@@ -376,7 +375,6 @@ footer {
         border-radius: 10px; }
     .background_manga .manga_section .revengers_polaroid {
       background: rgba(0, 0, 0, 0.137);
-      box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       display: block;
@@ -385,7 +383,7 @@ footer {
       width: 40vh;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: #F2EFEA; }
+      color: antiquewhite; }
       .background_manga .manga_section .revengers_polaroid .revengers_polaroid_picture {
         width: 100%;
         height: auto;
@@ -440,7 +438,7 @@ footer {
 
 /*Main of Contact Us*/
 .contact_background {
-  background-image: url(../images/Profile/background_profile.jpg);
+  background-image: url(./assets/images/Profile/background_profile.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
