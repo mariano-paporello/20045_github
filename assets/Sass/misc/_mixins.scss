@@ -19,6 +19,15 @@ button:hover{
     color: map-get($colors, principal );
 }
 .add_to_cart_buttons{
-    margin-left: 25%;
-    margin-right: 25%;
+    color: map-get($colors, principal );
+    background: #000000;
+    background: linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -moz-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    border: solid 2px orange;
+    margin: 1vh 25%;
+}
+.add_to_cart_buttons:hover{
+     background-color:#000000;
+     color:white ;
 }

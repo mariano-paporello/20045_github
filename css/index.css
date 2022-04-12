@@ -27,8 +27,17 @@ button:hover {
   color: #F29602; }
 
 .add_to_cart_buttons {
-  margin-left: 25%;
-  margin-right: 25%; }
+  color: #F29602;
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  border: solid 2px orange;
+  margin: 1vh 25%; }
+
+.add_to_cart_buttons:hover {
+  background-color: #000000;
+  color: white; }
 
 /* Normalize*/
 *,
@@ -48,6 +57,10 @@ body {
   min-width: 100%;
   display: grid;
   grid-auto-rows: auto 1fr auto; }
+
+button {
+  transition-duration: 0.4s;
+  cursor: pointer; }
 
 /*Partials*/
 /*Header Menu styles */
@@ -435,6 +448,41 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center; }
+    .background_createNew .create_new p {
+      padding: 1vh;
+      color: #F29602;
+      font-size: large; }
+    .background_createNew .create_new input {
+      width: 100%;
+      color: #000000;
+      font-size: larger; }
+    .background_createNew .create_new .buttons_snd_rst {
+      display: flex; }
+    .background_createNew .create_new input[type=submit] {
+      width: 100%;
+      background-color: orange;
+      color: #000000;
+      padding: 14px 20px;
+      margin: 8px 3px;
+      border: solid 3px #000000;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: small; }
+    .background_createNew .create_new input[type=submit]:hover {
+      background-color: #e49504; }
+    .background_createNew .create_new input[type=reset] {
+      background-color: orange;
+      color: #000000;
+      padding: 14px 20px;
+      margin: 8px 3px;
+      border: solid 3px #000000;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: small; }
+    .background_createNew .create_new input[type=reset]:hover {
+      background-color: #e49504; }
+    .background_createNew .create_new .link_to_InSs {
+      color: #F29602; }
 
 /*Main of Contact Us*/
 .contact_background {
