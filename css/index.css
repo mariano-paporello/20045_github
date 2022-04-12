@@ -486,7 +486,7 @@ footer {
 
 /*Main of Contact Us*/
 .contact_background {
-  background-image: url(./assets/images/Profile/background_profile.jpg);
+  background-image: url(../assets/images/Profile/background_profile.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -496,10 +496,14 @@ footer {
     text-align: center;
     margin: 5vh 0;
     background-color: black;
-    border-radius: 1.5vw;
-    height: 70vh; }
+    border-radius: 1.5vw; }
+    .contact_background .form label {
+      font-size: large; }
     .contact_background .form fieldset p {
       padding: 2vh; }
+      .contact_background .form fieldset p input {
+        color: #000000;
+        font-size: medium; }
     .contact_background .form fieldset {
       display: grid;
       grid-template-columns: 1fr;
