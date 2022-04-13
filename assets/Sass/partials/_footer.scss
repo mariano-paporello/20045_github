@@ -2,8 +2,8 @@
 footer {
     background-color: map-get($colors, darker);
     min-height: 10vh;
-    display: flex;
-    justify-content:space-around;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
     .copyright {
         flex-basis: 30%;
@@ -19,6 +19,7 @@ footer {
         width: auto;
         display: flex;
         align-items: center;
+        justify-content: center;
 
         .footer_link {
             padding: 1vh;
@@ -30,7 +31,11 @@ footer {
         justify-content: flex-end;
         margin: 0 3vw;
         align-items: center;
+        gap: 10px;
 
+        a:hover{
+            border-bottom: solid 2px white;
+        }
         li {
             margin: 0 5px;
         };

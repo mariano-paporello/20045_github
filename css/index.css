@@ -163,8 +163,8 @@ header {
 footer {
   background-color: #000000;
   min-height: 10vh;
-  display: flex;
-  justify-content: space-around; }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
   footer .copyright {
     flex-basis: 30%;
     color: #3D3D3D;
@@ -176,14 +176,18 @@ footer {
     height: 100%;
     width: auto;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     footer .link_contactUs .footer_link {
       padding: 1vh; }
   footer .icon_list {
     display: flex;
     justify-content: flex-end;
     margin: 0 3vw;
-    align-items: center; }
+    align-items: center;
+    gap: 10px; }
+    footer .icon_list a:hover {
+      border-bottom: solid 2px white; }
     footer .icon_list li {
       margin: 0 5px; }
   footer .footer_image {
