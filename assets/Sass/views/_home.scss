@@ -1,60 +1,129 @@
 /*Main of Index*/
-.body_index{
+.body_index {
     display: grid;
     grid-auto-rows: auto 1fr auto;
+
     .background_index {
         background: #000000;
-        background: linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
-        background: -webkit-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
-        background: -moz-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
-    
-        /*the main polaroid where it show a big image and a message*/
-        .polaroid_about_us{
-            color: map-get($colors, principal);
-                margin-left: 25px;
-                margin-top: 10px;
-                padding-bottom: 10px;
-        }
-        .polaroid {
-            display: block;
-            flex-basis: 30%;
-            width: 25vw;
-            
-            
-            .img_content {
-                min-width: auto;
-                min-height: 20vh;
-                text-align: center;
-                padding: 10px 20px;
-            }
-        }
+        background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+        background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+        background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+
         /*Part of bestseller here contain*/
         .bestseller_section {
-        flex-basis: 70%;
-        flex-grow: 1;
-        
+            flex-grow: 1;
+            border: white solid 2px;
+            margin: 10px;
+
             &_title {
                 color: map-get($colors, principal);
                 margin-left: 25px;
                 margin-top: 10px;
                 padding-bottom: 10px;
             }
-            .carnage_polaroid {
+            .best_seller_flex{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .index_polaroids {
                 background: rgba(0, 0, 0, 0.137);
                 border-radius: 10px;
                 border: 1px solid rgba(255, 255, 255, 0.18);
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                width: 40vh;
+                width: 35vh;
                 margin-top: 20px;
                 margin-bottom: 20px;
                 color: antiquewhite;
-            
-                .carnage_polaroid_picture {
-                width: 100%;
-                height: auto;
-                border-radius: 10px;
+
+                .index_polaroids_picture {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .message_section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            color: rgb(197, 197, 197);
+            text-align: center;
+
+            div {
+                margin: 5vh 2vw;
+                font-size: medium;
+                font-weight: bold;
+
+                p {
+                    font-weight: lighter;
+                    color: #6e6e6e;
+                }
+            }
+        }
+
+        .link_cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 5vh 0;
+
+            div {
+                text-align: center;
+                padding: 25% 0;
+            }
+
+            .comics_link {
+                background-image: url(../assets/images/comics_link.jpg);
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                margin: 0 3vw;
+                border-radius: 5px;
+
+                a {
+                    color: #000000;
+                    font-size: x-large;
+                    font-weight: bolder;
+                    background-color: #c7c7c7;
+                    border-radius: 15px;
+                    border-bottom: solid 4px #000000;
+                }
+            }
+
+            .manga_link {
+                background-image: url(../assets/images/manga_link.jpg );
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                margin: 0 3vw;
+                border-radius: 5px;
+
+                a {
+                    color: #000000;
+                    font-size: x-large;
+                    font-weight: bolder;
+                    background-color: #c7c7c7;
+                    border-radius: 15px;
+                    border-bottom: solid 4px #000000;
+                }
+            }
+
+            .ln_link {
+                background-image: url(../assets/images/lightNovel_link.jpg );
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                margin: 0 3vw;
+                border-radius: 5px;
+
+                a {
+                    color: #000000;
+                    font-size: x-large;
+                    font-weight: bolder;
+                    background-color: #c7c7c7;
+                    border-radius: 15px;
+                    border-bottom: solid 4px #000000;
                 }
             }
         }

@@ -12,75 +12,26 @@
     }
 /*Section of comics */
     .section_comics {
-        @include flex(auto, baseline, 15px);
+        @include flex(auto, baseline, 10px);
         flex-wrap: wrap;
-        margin-bottom: 10px;
 /*The polaroids and their respective pictures*/
-        .carnage_polaroid {
+        .comics_polaroid{
             background: rgba(0, 0, 0, 0.137);
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.18);
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 40vh;
+            width: 35vh;
             margin-top: 20px;
+            margin-bottom: 20px;
             color: aliceblue;
-            .carnage_polaroid_picture {
+            &_picture {
                 width: 100%;
                 height: auto;
              border-radius: 10px;
             }
-        }
-        .daredevil_polaroid {
-            background: rgba(0, 0, 0, 0.137);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 40vh;
-            margin-top: 20px;
-            color: aliceblue;
-            .daredevil_polaroid_picture {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            }
-        }
-        .conan_polaroid {
-            background: rgba(0, 0, 0, 0.137);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 40vh;
-            margin-top: 20px;
-            color: aliceblue;
-            .conan_polaroid_picture {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            }
-        }
-        .hulk_polaroid {
-        background: rgba(0, 0, 0, 0.137);
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 40vh;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: aliceblue;
-            .hulk_polaroid_picture {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            }    
-        }   
+        }  
     }   
 }
 

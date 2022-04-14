@@ -82,7 +82,8 @@ a:active {
   border-bottom: 3px solid crimson; }
 
 header {
-  background-color: #000000; }
+  background-color: #000000;
+  font-weight: bolder; }
   header .nav {
     min-height: 10vh;
     min-width: 100%;
@@ -171,7 +172,7 @@ footer {
     font-size: small;
     text-align: center;
     display: flex;
-    align-items: flex-end; }
+    align-items: center; }
   footer .link_contactUs {
     height: 100%;
     width: auto;
@@ -203,45 +204,95 @@ footer {
     background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
     background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
     background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
-    /*the main polaroid where it show a big image and a message*/
     /*Part of bestseller here contain*/ }
-    .body_index .background_index .polaroid_about_us {
-      color: #F29602;
-      margin-left: 25px;
-      margin-top: 10px;
-      padding-bottom: 10px; }
-    .body_index .background_index .polaroid {
-      display: block;
-      flex-basis: 30%;
-      width: 25vw; }
-      .body_index .background_index .polaroid .img_content {
-        min-width: auto;
-        min-height: 20vh;
-        text-align: center;
-        padding: 10px 20px; }
     .body_index .background_index .bestseller_section {
-      flex-basis: 70%;
-      flex-grow: 1; }
+      flex-grow: 1;
+      border: white solid 2px;
+      margin: 10px; }
       .body_index .background_index .bestseller_section_title {
         color: #F29602;
         margin-left: 25px;
         margin-top: 10px;
         padding-bottom: 10px; }
-      .body_index .background_index .bestseller_section .carnage_polaroid {
+      .body_index .background_index .bestseller_section .best_seller_flex {
+        display: flex;
+        flex-wrap: wrap; }
+      .body_index .background_index .bestseller_section .index_polaroids {
         background: rgba(0, 0, 0, 0.137);
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 40vh;
+        width: 35vh;
         margin-top: 20px;
         margin-bottom: 20px;
         color: antiquewhite; }
-        .body_index .background_index .bestseller_section .carnage_polaroid .carnage_polaroid_picture {
+        .body_index .background_index .bestseller_section .index_polaroids .index_polaroids_picture {
           width: 100%;
           height: auto;
           border-radius: 10px; }
+    .body_index .background_index .message_section {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      color: #c5c5c5;
+      text-align: center; }
+      .body_index .background_index .message_section div {
+        margin: 5vh 2vw;
+        font-size: medium;
+        font-weight: bold; }
+        .body_index .background_index .message_section div p {
+          font-weight: lighter;
+          color: #6e6e6e; }
+    .body_index .background_index .link_cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 5vh 0; }
+      .body_index .background_index .link_cards div {
+        text-align: center;
+        padding: 25% 0; }
+      .body_index .background_index .link_cards .comics_link {
+        background-image: url(../assets/images/comics_link.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin: 0 3vw;
+        border-radius: 5px; }
+        .body_index .background_index .link_cards .comics_link a {
+          color: #000000;
+          font-size: x-large;
+          font-weight: bolder;
+          background-color: #c7c7c7;
+          border-radius: 15px;
+          border-bottom: solid 4px #000000; }
+      .body_index .background_index .link_cards .manga_link {
+        background-image: url(../assets/images/manga_link.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin: 0 3vw;
+        border-radius: 5px; }
+        .body_index .background_index .link_cards .manga_link a {
+          color: #000000;
+          font-size: x-large;
+          font-weight: bolder;
+          background-color: #c7c7c7;
+          border-radius: 15px;
+          border-bottom: solid 4px #000000; }
+      .body_index .background_index .link_cards .ln_link {
+        background-image: url(../assets/images/lightNovel_link.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin: 0 3vw;
+        border-radius: 5px; }
+        .body_index .background_index .link_cards .ln_link a {
+          color: #000000;
+          font-size: x-large;
+          font-weight: bolder;
+          background-color: #c7c7c7;
+          border-radius: 15px;
+          border-bottom: solid 4px #000000; }
 
 /*Main of Comics*/
 .comics_background {
@@ -258,64 +309,21 @@ footer {
     display: flex;
     justify-content: auto;
     align-items: baseline;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
-    margin-bottom: 10px;
     /*The polaroids and their respective pictures*/ }
-    .comics_background .section_comics .carnage_polaroid {
+    .comics_background .section_comics .comics_polaroid {
       background: rgba(0, 0, 0, 0.137);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 40vh;
-      margin-top: 20px;
-      color: aliceblue; }
-      .comics_background .section_comics .carnage_polaroid .carnage_polaroid_picture {
-        width: 100%;
-        height: auto;
-        border-radius: 10px; }
-    .comics_background .section_comics .daredevil_polaroid {
-      background: rgba(0, 0, 0, 0.137);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 40vh;
-      margin-top: 20px;
-      color: aliceblue; }
-      .comics_background .section_comics .daredevil_polaroid .daredevil_polaroid_picture {
-        width: 100%;
-        height: auto;
-        border-radius: 10px; }
-    .comics_background .section_comics .conan_polaroid {
-      background: rgba(0, 0, 0, 0.137);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 40vh;
-      margin-top: 20px;
-      color: aliceblue; }
-      .comics_background .section_comics .conan_polaroid .conan_polaroid_picture {
-        width: 100%;
-        height: auto;
-        border-radius: 10px; }
-    .comics_background .section_comics .hulk_polaroid {
-      background: rgba(0, 0, 0, 0.137);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 40vh;
+      width: 35vh;
       margin-top: 20px;
       margin-bottom: 20px;
       color: aliceblue; }
-      .comics_background .section_comics .hulk_polaroid .hulk_polaroid_picture {
+      .comics_background .section_comics .comics_polaroid_picture {
         width: 100%;
         height: auto;
         border-radius: 10px; }
@@ -335,73 +343,19 @@ footer {
     flex-wrap: wrap;
     align-content: center;
     align-items: baseline;
-    flex-grow: 1;
-    gap: 15px; }
-    .background_manga .manga_section .blue_lock_polaroid {
+    flex-grow: 1; }
+    .background_manga .manga_section .mg_polaroid {
       background: rgba(0, 0, 0, 0.137);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 40vh;
+      width: 35vh;
       margin-top: 20px;
       margin-bottom: 20px;
       color: antiquewhite; }
-      .background_manga .manga_section .blue_lock_polaroid_picture {
-        width: 100%;
-        height: auto;
-        border-radius: 10px; }
-    .background_manga .manga_section .chainsaw_polaroid {
-      background: rgba(0, 0, 0, 0.137);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 40vh;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      color: antiquewhite; }
-      .background_manga .manga_section .chainsaw_polaroid .chainsaw_polaroid_picture {
-        width: 100%;
-        height: auto;
-        border-radius: 10px; }
-      .background_manga .manga_section .chainsaw_polaroid .chainsaw_polaroid div button {
-        color: black;
-        margin: 7px;
-        display: inline; }
-    .background_manga .manga_section .jujutsu_polaroid {
-      background: rgba(0, 0, 0, 0.137);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 40vh;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      color: antiquewhite; }
-      .background_manga .manga_section .jujutsu_polaroid .jujutsu_polaroid div button {
-        color: black;
-        margin: 7px;
-        display: inline; }
-      .background_manga .manga_section .jujutsu_polaroid .jujutsu_polaroid_picture {
-        width: 100%;
-        height: auto;
-        border-radius: 10px; }
-    .background_manga .manga_section .revengers_polaroid {
-      background: rgba(0, 0, 0, 0.137);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 40vh;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      color: antiquewhite; }
-      .background_manga .manga_section .revengers_polaroid .revengers_polaroid_picture {
+      .background_manga .manga_section .mg_polaroid_picture {
         width: 100%;
         height: auto;
         border-radius: 10px; }
@@ -421,20 +375,19 @@ footer {
     flex-wrap: wrap;
     align-content: center;
     align-items: baseline;
-    flex-grow: 1;
-    gap: 15px; }
-  .background_light_novel .goblin_slayer {
+    flex-grow: 1; }
+  .background_light_novel .ln_polaroids {
     background: rgba(0, 0, 0, 0.137);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40vh;
+    width: 35vh;
     margin-top: 20px;
     margin-bottom: 20px;
     color: antiquewhite; }
-    .background_light_novel .goblin_slayer_picture {
+    .background_light_novel .ln_polaroids_picture {
       width: 100%;
       height: auto;
       border-radius: 10px; }

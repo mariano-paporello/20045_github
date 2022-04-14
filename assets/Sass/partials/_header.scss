@@ -24,6 +24,7 @@ a:active {
 
 header {
     background-color:map-get($colors, darker);
+    font-weight: bolder;
 
     .nav {
         min-height: 10vh;
