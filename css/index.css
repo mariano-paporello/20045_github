@@ -413,7 +413,8 @@ footer {
     .background_createNew .create_new input {
       width: 100%;
       color: #000000;
-      font-size: larger; }
+      font-size: larger;
+      padding: 2px; }
     .background_createNew .create_new .buttons_snd_rst {
       display: flex; }
     .background_createNew .create_new input[type=submit] {
@@ -471,10 +472,15 @@ footer {
       padding: 1vh;
       color: #F29602;
       font-size: large; }
+      .contact_background .contact_form p input[type=checkbox] {
+        width: auto; }
     .contact_background .contact_form input {
       width: 100%;
       color: #000000;
-      font-size: larger; }
+      font-size: larger;
+      padding: 2px; }
+    .contact_background .contact_form label {
+      padding: 5px; }
     .contact_background .contact_form .buttons_snd_rst {
       display: flex; }
     .contact_background .contact_form input[type=submit] {

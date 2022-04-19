@@ -25,7 +25,7 @@
                     <li><a href="./iniciar_sesion.html">Iniciar Sesion</a></li>
                     <li>
                         <a href="./profile.html">
-                             Profile
+                            Perfil
                         </a>
                     </li>
                 </ul>
@@ -52,7 +52,7 @@
         </nav>
     </Header>
     <main class="contact_background">
-        <h1>Crear Cuenta</h1>
+        <h1>Contactanos</h1>
         <div class="contact_form">
             <form class="form_background">
                 <p>
@@ -65,7 +65,7 @@
                 </p>
                     <input type="email" name="Gmail" placeholder="******@gmail.com">
                 
-                <p>
+                <!-- <p>
                     <label for="telephone">Numero de Telefono:</label>
                 </p>
                     <input type="number" name="telephone">
@@ -78,12 +78,28 @@
                 <p>
                     <label>Confirmar Contraseña</label>
                 </p>
-                    <input type="password" name="confirm-password" placeholder="The same Password">
-                
+                    <input type="password" name="confirm-password" placeholder="The same Password"> -->
+                    <p>
+                       <label for="Estado civil">Estado</label>  
+                    
+                       <select name="Estado civil">
+                        <Option value="Married">Casado</Option>
+                        <option value="Lonely">Soltero</option>
+                        <option value="In something">En algo</option>
+                        </select>
+                    </p>
+                <p><label for="checkbox1"> Quieres recibir nuestras notificaciones?</label>
+                        <input name="checkbox1" type="checkbox">
+                </p>
+                <p>
+                    <label for="coments">Comentarios</label>
+                    <input type="">
+                </p>
                 <p class="buttons_snd_rst">
                     <input type="reset" value="Reiniciar">
                     <input type="submit" value="Enviar">
                 </p>
+                
             </form>
         </div>
     </main>

@@ -33,12 +33,19 @@
             padding: 1vh;
             color: map-get($colors, principal);
             font-size: large;
+            input[type=checkbox]{
+                width: auto;
+            }
         }
 
         input {
             width: 100%;
             color: #000000;
             font-size:larger;
+            padding: 2px;
+        }
+        label{
+            padding: 5px;
         }
         .buttons_snd_rst{
             display: flex;
