@@ -252,7 +252,7 @@ footer {
         text-align: center;
         padding: 25% 0; }
       .body_index .background_index .link_cards .comics_link {
-        background-image: url(../assets/images/comics_link.jpg);
+        background-image: url(../assets/images/comics_link.webp);
         background-size: cover;
         display: flex;
         justify-content: center;
