@@ -1,0 +1,65 @@
+.background_createNew {
+    background: #000000;
+    background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+
+    h1 {
+        color: map-get($colors, principal);
+        margin: 20px 1vw;
+        border-bottom: 2px solid map-get($colors, principal);
+    }
+
+    .create_new {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        p {
+            padding: 1vh;
+            color: map-get($colors, principal);
+            font-size: large;
+        }
+
+        input {
+            width: 100%;
+            color: #000000;
+            font-size:larger;
+            padding: 2px;
+        }
+        .buttons_snd_rst{
+            display: flex;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: orange;
+            color:#000000;
+            padding: 14px 20px;
+            margin: 8px 3px;
+            border: solid 3px #000000;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: small;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(228, 149, 4);
+        }
+        input[type=reset]{
+            background-color: orange;
+            color:#000000;
+            padding: 14px 20px;
+            margin: 8px 3px;
+            border: solid 3px #000000;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: small;
+        }
+        input[type=reset]:hover{
+            background-color: rgb(228, 149, 4);
+        }
+        .link_to_InSs{
+            color: map-get($colors, principal);
+        }
+    }
+}

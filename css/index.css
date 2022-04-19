@@ -1,0 +1,560 @@
+/* Globales y variables*/
+/*Variables*/
+.color--principal {
+  color: #F29602; }
+
+.color--secondary {
+  color: #F2EFEA; }
+
+.color--backgrounds {
+  color: #3D3D3D; }
+
+.color--darker {
+  color: #000000; }
+
+/*Helpers*/
+li form input {
+  width: 13vw; }
+
+.polaroid_content {
+  text-align: center;
+  padding: 0vh 2vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+button:hover {
+  color: #F29602; }
+
+.add_to_cart_buttons {
+  color: #F29602;
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  border: solid 2px orange;
+  margin: 1vh 25%; }
+
+.add_to_cart_buttons:hover {
+  background-color: #000000;
+  color: white; }
+
+/* Normalize*/
+*,
+*::after,
+*::before {
+  font-family: 'Syncopate', sans-serif;
+  border-left: 20px;
+  border-right: 20px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  display: grid;
+  grid-auto-rows: auto 1fr auto; }
+
+button {
+  transition-duration: 0.4s;
+  cursor: pointer; }
+
+/*Partials*/
+/*Header Menu styles */
+a:link {
+  color: #F29602; }
+
+a:visited {
+  color: #F29602; }
+
+a:hover {
+  color: #F2EFEA; }
+
+li a:hover:not(.active) {
+  background-color: #252424;
+  border-bottom: 4px solid #F2EFEA; }
+
+a:active {
+  color: black;
+  border-bottom: 3px solid crimson; }
+
+header {
+  background-color: #000000;
+  font-weight: bolder; }
+  header .nav {
+    min-height: 10vh;
+    min-width: 100%;
+    border-bottom: 1px solid whitesmoke; }
+    header .nav .menu_div {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 0;
+      min-height: inherit; }
+      header .nav .menu_div .menu_title {
+        color: #F29602;
+        flex-basis: 20%;
+        max-width: auto;
+        padding: 7px; }
+      header .nav .menu_div .menu_link {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0;
+        gap: 1vw;
+        flex-basis: 70%; }
+        header .nav .menu_div .menu_link li a {
+          font-size: 2vh;
+          padding: 3vh;
+          transition: all .3s ease-in-out; }
+  header .secondary_nav {
+    border-bottom: 1px solid grey; }
+    header .secondary_nav_list {
+      display: flex; }
+      header .secondary_nav_list_item {
+        padding: 1vh 0; }
+        header .secondary_nav_list_item .sales-pages {
+          padding: 1vh 2vw; }
+
+/* Media Queries*/
+@media screen and (max-width: 770px) {
+  .menu_div {
+    flex-wrap: wrap;
+    justify-content: center; }
+    .menu_div .menu_link {
+      justify-content: space-between;
+      flex-grow: 1; }
+      .menu_div .menu_link li a {
+        padding: 0 3vw;
+        display: flex;
+        justify-content: center; }
+      .menu_div .menu_link li form input {
+        width: 10vw 0; }
+      .menu_div .menu_link #light_novel_link_ {
+        padding-bottom: 5px; } }
+
+@media screen and (max-width: 730px) {
+  #light_novel_link_ {
+    padding: 2vh 0; } }
+
+@media screen and (max-width: 570px) {
+  header nav .menu_div {
+    display: grid;
+    grid-template-rows: 1fr 1fr; }
+    header nav .menu_div .menu_title {
+      justify-self: center; }
+    header nav .menu_div .menu_link {
+      justify-content: space-between;
+      flex-grow: 1; }
+      header nav .menu_div .menu_link #light_novel_link_ {
+        padding: 0 10px; }
+      header nav .menu_div .menu_link li a {
+        font-size: 2vh;
+        padding: 0 4vw;
+        transition: all .3s ease-in-out; } }
+
+@media screen and (max-width: 480px) {
+  #light_novel_link_ {
+    padding: 0vh 1vh; } }
+
+/* ! footer*/
+footer {
+  background-color: #000000;
+  min-height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  footer .copyright {
+    flex-basis: 30%;
+    color: #3D3D3D;
+    font-size: small;
+    text-align: center;
+    display: flex;
+    align-items: center; }
+  footer .link_contactUs {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer .link_contactUs .footer_link {
+      padding: 1vh; }
+  footer .icon_list {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 3vw;
+    align-items: center;
+    gap: 10px; }
+    footer .icon_list a:hover {
+      border-bottom: solid 2px white; }
+    footer .icon_list li {
+      margin: 0 5px; }
+  footer .footer_image {
+    max-height: 30px; }
+
+/*Vistas*/
+/*Main of Index*/
+.body_index {
+  display: grid;
+  grid-auto-rows: auto 1fr auto; }
+  .body_index .background_index {
+    background: #000000;
+    background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+    /*Part of bestseller here contain*/ }
+    .body_index .background_index .bestseller_section {
+      flex-grow: 1;
+      border: white solid 2px;
+      margin: 10px; }
+      .body_index .background_index .bestseller_section_title {
+        color: #F29602;
+        margin-left: 25px;
+        margin-top: 10px;
+        padding-bottom: 10px; }
+      .body_index .background_index .bestseller_section .best_seller_flex {
+        display: flex;
+        flex-wrap: wrap; }
+      .body_index .background_index .bestseller_section .index_polaroids {
+        background: rgba(0, 0, 0, 0.137);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: antiquewhite; }
+        .body_index .background_index .bestseller_section .index_polaroids .index_polaroids_picture {
+          width: 100%;
+          height: auto;
+          border-radius: 10px; }
+    .body_index .background_index .message_section {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      color: #c5c5c5;
+      text-align: center; }
+      .body_index .background_index .message_section div {
+        margin: 5vh 2vw;
+        font-size: medium;
+        font-weight: bold; }
+        .body_index .background_index .message_section div p {
+          font-weight: lighter;
+          color: #6e6e6e; }
+    .body_index .background_index .link_cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 5vh 0; }
+      .body_index .background_index .link_cards div {
+        text-align: center;
+        padding: 25% 0; }
+      .body_index .background_index .link_cards .comics_link {
+        background-image: url(../assets/images/comics_link.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin: 0 3vw;
+        border-radius: 5px; }
+        .body_index .background_index .link_cards .comics_link a {
+          color: #000000;
+          font-size: x-large;
+          font-weight: bolder;
+          background-color: #c7c7c7;
+          border-radius: 15px;
+          border-bottom: solid 4px #000000; }
+      .body_index .background_index .link_cards .manga_link {
+        background-image: url(../assets/images/manga_link.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin: 0 3vw;
+        border-radius: 5px; }
+        .body_index .background_index .link_cards .manga_link a {
+          color: #000000;
+          font-size: x-large;
+          font-weight: bolder;
+          background-color: #c7c7c7;
+          border-radius: 15px;
+          border-bottom: solid 4px #000000; }
+      .body_index .background_index .link_cards .ln_link {
+        background-image: url(../assets/images/lightNovel_link.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin: 0 3vw;
+        border-radius: 5px; }
+        .body_index .background_index .link_cards .ln_link a {
+          color: #000000;
+          font-size: x-large;
+          font-weight: bolder;
+          background-color: #c7c7c7;
+          border-radius: 15px;
+          border-bottom: solid 4px #000000; }
+
+/*Main of Comics*/
+.comics_background {
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  /*Section of comics */ }
+  .comics_background .comics_title {
+    color: #F29602;
+    margin: 20px 1vw;
+    border-bottom: 2px solid #F29602; }
+  .comics_background .section_comics {
+    display: flex;
+    justify-content: auto;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    /*The polaroids and their respective pictures*/ }
+    .comics_background .section_comics .comics_polaroid {
+      background: rgba(0, 0, 0, 0.137);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35vh;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: aliceblue; }
+      .comics_background .section_comics .comics_polaroid_picture {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; }
+
+/* Main of Manga*/
+.background_manga {
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%); }
+  .background_manga .manga_title {
+    color: #F29602;
+    margin: 20px 1vw;
+    border-bottom: 2px solid #F29602; }
+  .background_manga .manga_section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: baseline;
+    flex-grow: 1; }
+    .background_manga .manga_section .mg_polaroid {
+      background: rgba(0, 0, 0, 0.137);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35vh;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: antiquewhite; }
+      .background_manga .manga_section .mg_polaroid_picture {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; }
+
+/*Main of Light Novels*/
+.background_light_novel {
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%); }
+  .background_light_novel .light_novel_title {
+    color: #F29602;
+    margin: 20px 1vw;
+    border-bottom: 2px solid #F29602; }
+  .background_light_novel .light_novel_section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: baseline;
+    flex-grow: 1; }
+  .background_light_novel .ln_polaroids {
+    background: rgba(0, 0, 0, 0.137);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: antiquewhite; }
+    .background_light_novel .ln_polaroids_picture {
+      width: 100%;
+      height: auto;
+      border-radius: 10px; }
+
+.background_createNew {
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%); }
+  .background_createNew h1 {
+    color: #F29602;
+    margin: 20px 1vw;
+    border-bottom: 2px solid #F29602; }
+  .background_createNew .create_new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; }
+    .background_createNew .create_new p {
+      padding: 1vh;
+      color: #F29602;
+      font-size: large; }
+    .background_createNew .create_new input {
+      width: 100%;
+      color: #000000;
+      font-size: larger;
+      padding: 2px; }
+    .background_createNew .create_new .buttons_snd_rst {
+      display: flex; }
+    .background_createNew .create_new input[type=submit] {
+      width: 100%;
+      background-color: orange;
+      color: #000000;
+      padding: 14px 20px;
+      margin: 8px 3px;
+      border: solid 3px #000000;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: small; }
+    .background_createNew .create_new input[type=submit]:hover {
+      background-color: #e49504; }
+    .background_createNew .create_new input[type=reset] {
+      background-color: orange;
+      color: #000000;
+      padding: 14px 20px;
+      margin: 8px 3px;
+      border: solid 3px #000000;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: small; }
+    .background_createNew .create_new input[type=reset]:hover {
+      background-color: #e49504; }
+    .background_createNew .create_new .link_to_InSs {
+      color: #F29602; }
+
+/*Main of Contact Us*/
+.contact_background {
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 50%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 50%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 50%, #000000 100%);
+  justify-content: center; }
+  .contact_background h1 {
+    color: #F29602;
+    margin: 20px 1vw;
+    border-bottom: 2px solid #F29602; }
+  .contact_background .contact_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-image: url(../assets/images/Profile/background_profile.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center; }
+    .contact_background .contact_form .form_background {
+      background-color: #111111;
+      border-radius: 15px;
+      padding: 5px; }
+    .contact_background .contact_form p {
+      padding: 1vh;
+      color: #F29602;
+      font-size: large; }
+      .contact_background .contact_form p input[type=checkbox] {
+        width: auto; }
+    .contact_background .contact_form input {
+      width: 100%;
+      color: #000000;
+      font-size: larger;
+      padding: 2px; }
+    .contact_background .contact_form label {
+      padding: 5px; }
+    .contact_background .contact_form .buttons_snd_rst {
+      display: flex; }
+    .contact_background .contact_form input[type=submit] {
+      width: 100%;
+      background-color: orange;
+      color: #000000;
+      padding: 14px 20px;
+      margin: 8px 3px;
+      border: solid 3px #000000;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: small; }
+    .contact_background .contact_form input[type=submit]:hover {
+      background-color: #e49504; }
+    .contact_background .contact_form input[type=reset] {
+      background-color: orange;
+      color: #000000;
+      padding: 14px 20px;
+      margin: 8px 3px;
+      border: solid 3px #000000;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: small; }
+    .contact_background .contact_form input[type=reset]:hover {
+      background-color: #e49504; }
+
+/*Profile main*/
+.profile_background {
+  background-color: #220808;
+  background: #000000;
+  background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%); }
+  .profile_background .title_profile {
+    color: #F29602;
+    margin: 20px 1vw;
+    border-bottom: 2px solid #F29602; }
+  .profile_background .profile_data {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .profile_background .profile_data .data {
+      text-align: center;
+      flex-basis: 40%;
+      text-decoration: solid;
+      background-color: black;
+      color: #F29602;
+      margin: 10px 10px;
+      border-radius: 10px; }
+      .profile_background .profile_data .data p {
+        padding: 1vh;
+        font-size: large; }
+      .profile_background .profile_data .data input {
+        color: #000000;
+        font-size: medium;
+        padding: 2px; }
+      .profile_background .profile_data .data .separation {
+        padding: 1vh 1vw; }
+    .profile_background .profile_data .compras {
+      text-align: center;
+      flex-basis: 50%;
+      text-decoration: solid;
+      background-color: black;
+      color: #F29602;
+      margin: 10px 10px;
+      border-radius: 10px; }
+      .profile_background .profile_data .compras .paragraph_compras {
+        padding: 1vh 1vw; }
+      .profile_background .profile_data .compras .selled_picture {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px; }
+        .profile_background .profile_data .compras .selled_picture .selled_item_img {
+          border-radius: 10px;
+          height: 30vh;
+          margin: 1vh 1vw; }

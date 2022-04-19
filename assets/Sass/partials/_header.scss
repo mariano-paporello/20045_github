@@ -1,20 +1,20 @@
 /*Header Menu styles */
 
 a:link {
-    color: rgb(255, 255, 255);
+    color: map-get($colors, principal );
 }
 
 a:visited {
-    color: rgba(255, 166, 0, 0.973);
+    color: map-get($colors, principal );
 }
 
 a:hover {
-    color: rgb(255, 0, 0);
+    color: map-get($colors, secondary );
 }
 
 li a:hover:not(.active) {
-    background-color: rgb(39, 3, 3);
-    border: 1px solid rgb(12, 12, 12);
+    background-color: rgb(37, 36, 36);
+    border-bottom: 4px solid map-get($colors, secondary);
 }
 
 a:active {
@@ -23,41 +23,49 @@ a:active {
 }
 
 header {
-    background-color: rgb(55, 6, 23);
+    background-color:map-get($colors, darker);
+    font-weight: bolder;
 
-    nav {
+    .nav {
         min-height: 10vh;
         min-width: 100%;
+        border-bottom: 1px solid whitesmoke;
 
         .menu_div {
             @include flex(space-evenly, center, 0);
             min-height: inherit;
 
             .menu_title {
-                color: #ffa500;
-                flex-basis: 30%;
-                min-width: 30vw;
-                max-width: 40vw;
-            }
-
-            .dropdown {
-                display: none;
+                color: map-get($colors, principal );
+                flex-basis: 20%;
+                max-width: auto;
+                padding: 7px
             }
 
             .menu_link {
-                @include flex(space-between, center, 0);
-                flex-basis: 60%;
+                @include flex(flex-end, center, 0);
+                gap: 1vw;
+                flex-basis: 70%;
                 li a {
                     font-size: 2vh;
                     padding: 3vh;
                     transition: all .3s ease-in-out;
                 }
-
-                #light_novel_link_ {
-                    padding: 3vh 1vw;
+            }
+        }
+    }
+    .secondary_nav{
+        border-bottom: 1px solid grey;
+        &_list{
+            display: flex;
+            &_item{
+                padding: 1vh 0;
+                .sales-pages{
+                    padding: 1vh 2vw;
                 }
             }
         }
+        
     }
 }
 

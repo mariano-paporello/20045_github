@@ -1,14 +1,49 @@
 /* ! footer*/
 footer {
-    background-color: rgb(55, 6, 23);
+    background-color: map-get($colors, darker);
     min-height: 10vh;
-}
-.footer_list {
-    @include flex(center, center, 0);
-    min-height: 10vh;
-    .footer_link {
-        padding: 1vh;
-        margin-left: 1vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .copyright {
+        flex-basis: 30%;
+        color: map-get($colors, backgrounds);
+        font-size: small;
+        text-align: center;
+        display: flex;
+        align-items:center
     }
+
+    .link_contactUs {
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .footer_link {
+            padding: 1vh;
+        }
+    }
+
+    .icon_list {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 3vw;
+        align-items: center;
+        gap: 10px;
+
+        a:hover{
+            border-bottom: solid 2px white;
+        }
+        li {
+            margin: 0 5px;
+        };
+    }
+
+    .footer_image {
+        max-height: 30px;
+    }
+
 }
 

@@ -1,14 +1,15 @@
 /* Main of Manga*/
 
 .background_manga {
-    background-image: url(../images/backgroud-image.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #000000;
+    background: linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -webkit-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -moz-linear-gradient(90deg, #000000 0%, #3d3d3d 90%, #000000 100%);
 
     .manga_title {
-        color: map-get($colors, Principal);
-        text-align: center;
+        color: map-get($colors, principal);
+        margin: 20px 1vw;
+        border-bottom: 2px solid map-get($colors, principal);
     }
 
     .manga_section {
@@ -17,103 +18,25 @@
         align-content: center;
         align-items: baseline;
         flex-grow: 1;
-        gap: 15px;
+        
 
-        .blue_lock_polaroid {
+        .mg_polaroid {
             background: rgba(0, 0, 0, 0.137);
-            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.18);
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 40vh;
+            width: 35vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            color: map-get($colors, secondary);
+            color: antiquewhite;
 
             &_picture {
                 width: 100%;
                 height: auto;
                 border-radius: 10px;
             }
-        }
-
-        
-
-        .chainsaw_polaroid {
-            background: rgba(0, 0, 0, 0.137);
-            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 40vh;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            color: map-get($colors, secondary);
-
-            .chainsaw_polaroid_picture {
-                width: 100%;
-                height: auto;
-                border-radius: 10px;
-            }
-
-            .chainsaw_polaroid div button {
-                color: black;
-                margin: 7px;
-                display: inline;
-            }
-
-
-
-        }
-
-        .jujutsu_polaroid {
-            background: rgba(0, 0, 0, 0.137);
-            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 40vh;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            color: map-get($colors, secondary);
-
-            .jujutsu_polaroid div button {
-                color: black;
-                margin: 7px;
-                display: inline;
-            }
-
-            .jujutsu_polaroid_picture {
-                width: 100%;
-                height: auto;
-                border-radius: 10px;
-            }
-        }
-
-        .revengers_polaroid {
-            background: rgba(0, 0, 0, 0.137);
-            box-shadow: 0 8px 32px 0 rgba(168, 170, 202, 0.37);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 40vh;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            color: map-get($colors, secondary);
-
-            .revengers_polaroid_picture {
-                width: 100%;
-                height: auto;
-                border-radius: 10px;
-            }
-        }
+        }     
     }
 }

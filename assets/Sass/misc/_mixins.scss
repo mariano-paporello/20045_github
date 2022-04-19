@@ -10,20 +10,24 @@ li form input{
 }
 .polaroid_content{
     text-align: center;
-    padding: 0vh 1vw;
+    padding: 0vh 2vw;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-}
-.add_to_cart_buttons{
-    padding: 2px;
-    background-image:url(../images/Buttons-general/buttons-bc.jpg);
-    background-size: cover;
-    color: whitesmoke;
+    flex-direction: column;
 }
 button:hover{
-    color: orange;
+    color: map-get($colors, principal );
 }
-hr{
-    border: inset orange;
+.add_to_cart_buttons{
+    color: map-get($colors, principal );
+    background: #000000;
+    background: linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    background: -moz-linear-gradient(90deg,#000000 0%, #3d3d3d 90%, #000000 100%);
+    border: solid 2px orange;
+    margin: 1vh 25%;
+}
+.add_to_cart_buttons:hover{
+     background-color:#000000;
+     color:white ;
 }
